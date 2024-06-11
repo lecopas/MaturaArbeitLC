@@ -1,0 +1,10 @@
+.vs/
+.vsconfig
+Assembly-CSharp.csproj
+Library/
+Logs/
+MaturaArbeitLC.sln
+MaturaBuild/
+Temp/
+UserSettings/
+obj/
