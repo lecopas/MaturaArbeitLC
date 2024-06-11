@@ -7,7 +7,7 @@ public class Accelerator : MonoBehaviour
 
     public Rigidbody2D rbParent;
     Rigidbody2D rb;
-    public float acceleration = 1;
+    public float force = 1;
 
 
     private void Start()
@@ -18,7 +18,6 @@ public class Accelerator : MonoBehaviour
     void FixedUpdate()
     {
         Vector3 forward = transform.TransformDirection(Vector3.up);
-        rbParent.AddForceAtPosition(forward * acceleration, rb.transform.position);
-        
+        rbParent.AddForceAtPosition(forward * force, rb.transform.position);
     }
 }
