@@ -5,7 +5,7 @@ using UnityEngine;
 public class Accelerator : MonoBehaviour
 {
 
-    public Rigidbody2D rbParent;
+    public Rigidbody2D rbParent = null;
     Rigidbody2D rb;
     public float force = 1;
 
@@ -17,7 +17,10 @@ public class Accelerator : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector3 forward = transform.TransformDirection(Vector3.up);
-        rbParent.AddForceAtPosition(forward * force, rb.transform.position);
+        if(rbParent != null) // constantly applies force to object. works with F = m * a
+        {
+            Vector3 forward = transform.TransformDirection(Vector3.up);
+            rbParent.AddForceAtPosition(forward * force, rb.transform.position);
+        }
     }
 }
