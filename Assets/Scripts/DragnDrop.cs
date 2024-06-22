@@ -13,6 +13,7 @@ public class DragnDrop : MonoBehaviour{
 
 	public bool onBlock = false;
 	public bool isReady = true;
+	public float speed = 1;
 
 	public bool dragging = false;
 	private float distance;
@@ -37,15 +38,22 @@ public class DragnDrop : MonoBehaviour{
 				gameObject.transform.parent = modified.transform;
 				Rigidbody2D rbModified = modified.GetComponentInParent<Rigidbody2D>();
 				acc.rbParent = rbModified;
+				acc.tempCollider.enabled = false;
 			}
         }
 	}
 
 	void Update(){
 		if (dragging){
+			acc.tempCollider.enabled = true;
 			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             Vector3 rayPoint = ray.GetPoint(distance);
-            transform.position = rayPoint;
+			//transform.position = Vector3.MoveTowards(transform.position, rayPoint, speed * Time.deltaTime);
+			transform.position = rayPoint;
+        }
+        else
+        {
+			acc.tempCollider.enabled = false;
 		}
 	}
 
@@ -72,6 +80,7 @@ public class DragnDrop : MonoBehaviour{
 				modified = null;
 				transform.parent = null;
 				acc.rbParent = null;
+				
 			}
 		}
 	}

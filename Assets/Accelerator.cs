@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Accelerator : MonoBehaviour
 {
-
+    public Collider2D tempCollider;
     public Rigidbody2D rbParent = null;
     Rigidbody2D rb;
     public float force = 1;
