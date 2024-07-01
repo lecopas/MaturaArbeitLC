@@ -7,6 +7,8 @@ public class DragnDrop : MonoBehaviour{
 	
 	Rigidbody2D rb;
 
+	public Collider2D dragCol;
+
 	GameObject modified;
 
 	public Accelerator acc;
@@ -17,6 +19,10 @@ public class DragnDrop : MonoBehaviour{
 
 	public bool dragging = false;
 	private float distance;
+
+	public ContactFilter2D movementFilter;
+
+	List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
 
 	private void Start(){
 		rb = GetComponent<Rigidbody2D>();
@@ -45,14 +51,19 @@ public class DragnDrop : MonoBehaviour{
 
 	void Update(){
 		if (dragging){
+			gameObject.transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+			dragCol.enabled = false;
 			acc.tempCollider.enabled = true;
 			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             Vector3 rayPoint = ray.GetPoint(distance);
-			//transform.position = Vector3.MoveTowards(transform.position, rayPoint, speed * Time.deltaTime);
-			transform.position = rayPoint;
-        }
+			Vector3 direction = (rayPoint - transform.position).normalized;
+			TryMoveSimple(direction);
+			
+		}
         else
         {
+			gameObject.transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+			dragCol.enabled = true;
 			acc.tempCollider.enabled = false;
 		}
 	}
@@ -84,4 +95,50 @@ public class DragnDrop : MonoBehaviour{
 			}
 		}
 	}
+
+	private bool TryMove(Vector2 direction)
+	{
+		if (direction != Vector2.zero)
+		{
+			int count = rb.Cast(
+				direction,
+				movementFilter,
+				castCollisions,
+				speed * Time.fixedDeltaTime);
+
+			if (count == 0)
+			{
+				rb.MovePosition(rb.position + direction * speed * Time.fixedDeltaTime);
+				return true;
+			}
+			else
+			{
+				rb.MovePosition(rb.position + direction * speed * Time.fixedDeltaTime);
+
+				return false;
+			}
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	private void TryMoveSimple(Vector2 direction)
+    {
+		rb.MovePosition(rb.position + direction * speed * Time.fixedDeltaTime);
+	}
+
+	//bool success = TryMove(direction);
+	//         if (!success)
+	//         {
+	//	success = TryMove(new Vector2(direction.x, 0));
+	//         }
+
+	//         if (!success)
+	//         {
+	//	TryMove(new Vector2(0, direction.y));
+	//         }
+	//transform.position = Vector3.MoveTowards(transform.position, rayPoint, speed * Time.deltaTime);
+	//transform.position = rayPoint;
 }
