@@ -16,6 +16,7 @@ public class DragnDrop : MonoBehaviour{
 	public bool onBlock = false;
 	public bool isReady = true;
 	public float speed = 1;
+	public float rotateSpeed = 1;
 
 	public bool dragging = false;
 	private float distance;
@@ -25,6 +26,7 @@ public class DragnDrop : MonoBehaviour{
 	public ContactFilter2D movementFilter;
 
 	List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
+
 
 	private void Start(){
 		rb = GetComponent<Rigidbody2D>();
@@ -52,8 +54,15 @@ public class DragnDrop : MonoBehaviour{
         }
 	}
 
-	void FixedUpdate(){
+	void Update(){
 		if (dragging){
+
+			//Rotation Code
+			
+			transform.Rotate(Vector3.forward * rotateSpeed * Time.fixedDeltaTime * Input.mouseScrollDelta.y);
+
+			//Movement Code
+
 			gameObject.transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
 			dragCol.enabled = false;
 			acc.tempCollider.enabled = true;
@@ -61,9 +70,7 @@ public class DragnDrop : MonoBehaviour{
             Vector3 rayPoint = ray.GetPoint(distance);
 			Vector3 direction = (rayPoint - transform.position).normalized;
 			
-
 			TryMoveSimple(direction);
-			
 		}
         else
         {
@@ -75,8 +82,6 @@ public class DragnDrop : MonoBehaviour{
 
 	private void OnTriggerEnter2D(Collider2D other)
 	{
-
-
 		if (other.tag == "Modifiable")
 		{
 			onBlock = true;
@@ -86,7 +91,6 @@ public class DragnDrop : MonoBehaviour{
 
 	private void OnTriggerExit2D(Collider2D other)
 	{
-
 		if (other.tag == "Modifiable")
 		{
 			onBlock = false;
@@ -96,7 +100,6 @@ public class DragnDrop : MonoBehaviour{
 				modified = null;
 				transform.parent = null;
 				acc.rbParent = null;
-				
 			}
 		}
 	}

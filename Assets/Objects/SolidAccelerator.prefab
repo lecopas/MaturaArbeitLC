@@ -226,6 +226,7 @@ MonoBehaviour:
   onBlock: 0
   isReady: 0
   speed: 125
+  rotateSpeed: 500
   dragging: 0
   movementFilter:
     useTriggers: 0

@@ -5,8 +5,12 @@ using UnityEngine;
 public class mainScript : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
+    public void StartSim()
     {
-        Time.timeScale = 0;
+        print("confirm");
+        GameObject[] intObjects = GameObject.FindGameObjectsWithTag("Modifiable");
+        foreach (GameObject thing in intObjects)
+            thing.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+            
     }
 }
