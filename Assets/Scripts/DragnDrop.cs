@@ -20,6 +20,8 @@ public class DragnDrop : MonoBehaviour{
 	public bool dragging = false;
 	private float distance;
 
+	Vector3 farPoint = new Vector3(0, 0, 0);
+
 	public ContactFilter2D movementFilter;
 
 	List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
@@ -29,7 +31,8 @@ public class DragnDrop : MonoBehaviour{
 	}
 
 	void OnMouseDown(){
-		distance = Vector3.Distance(transform.position, Camera.main.transform.position);
+		//distance = Vector3.Distance(transform.position, Camera.main.transform.position);
+		distance = Vector3.Distance(transform.position, farPoint);
 		dragging = true;
 	}
 
@@ -49,7 +52,7 @@ public class DragnDrop : MonoBehaviour{
         }
 	}
 
-	void Update(){
+	void FixedUpdate(){
 		if (dragging){
 			gameObject.transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
 			dragCol.enabled = false;
@@ -57,6 +60,8 @@ public class DragnDrop : MonoBehaviour{
 			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             Vector3 rayPoint = ray.GetPoint(distance);
 			Vector3 direction = (rayPoint - transform.position).normalized;
+			
+
 			TryMoveSimple(direction);
 			
 		}
@@ -113,7 +118,7 @@ public class DragnDrop : MonoBehaviour{
 			}
 			else
 			{
-				rb.MovePosition(rb.position + direction * speed * Time.fixedDeltaTime);
+				//rb.MovePosition(rb.position + direction * speed * Time.fixedDeltaTime);
 
 				return false;
 			}
@@ -126,7 +131,11 @@ public class DragnDrop : MonoBehaviour{
 
 	private void TryMoveSimple(Vector2 direction)
     {
-		rb.MovePosition(rb.position + direction * speed * Time.fixedDeltaTime);
+		if (direction != Vector2.zero)
+		{
+			rb.MovePosition(rb.position + direction * speed * Time.fixedDeltaTime);
+		}
+		
 	}
 
 	//bool success = TryMove(direction);
