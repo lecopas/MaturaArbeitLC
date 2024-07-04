@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class flagScript : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class flagScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other){
         if(other.collider.tag == "Modifiable"){
-            print("Success");
+            SceneManager.LoadScene("LevelSelect");
         }
     }
 }
