@@ -15,13 +15,11 @@ public class DragnDrop : MonoBehaviour{
 
 	public bool onBlock = false;
 	public bool isReady = true;
-	public float speed = 1;
 	public float rotateSpeed = 1;
 
 	public bool dragging = false;
 	private float distance;
 
-	Vector3 farPoint = new Vector3(0, 0, 0);
 
 	public ContactFilter2D movementFilter;
 
@@ -33,8 +31,7 @@ public class DragnDrop : MonoBehaviour{
 	}
 
 	void OnMouseDown(){
-		//distance = Vector3.Distance(transform.position, Camera.main.transform.position);
-		distance = Vector3.Distance(transform.position, farPoint);
+		distance = Vector3.Distance(transform.position, Camera.main.transform.position);
 		dragging = true;
 	}
 
@@ -63,14 +60,14 @@ public class DragnDrop : MonoBehaviour{
 
 			//Movement Code
 
-			gameObject.transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
 			dragCol.enabled = false;
 			acc.tempCollider.enabled = true;
+			gameObject.transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+
 			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             Vector3 rayPoint = ray.GetPoint(distance);
-			Vector3 direction = (rayPoint - transform.position).normalized;
-			
-			TryMoveSimple(direction);
+
+			rb.MovePosition(rayPoint);
 		}
         else
         {
@@ -104,42 +101,6 @@ public class DragnDrop : MonoBehaviour{
 		}
 	}
 
-	private bool TryMove(Vector2 direction)
-	{
-		if (direction != Vector2.zero)
-		{
-			int count = rb.Cast(
-				direction,
-				movementFilter,
-				castCollisions,
-				speed * Time.fixedDeltaTime);
-
-			if (count == 0)
-			{
-				rb.MovePosition(rb.position + direction * speed * Time.fixedDeltaTime);
-				return true;
-			}
-			else
-			{
-				//rb.MovePosition(rb.position + direction * speed * Time.fixedDeltaTime);
-
-				return false;
-			}
-		}
-		else
-		{
-			return false;
-		}
-	}
-
-	private void TryMoveSimple(Vector2 direction)
-    {
-		if (direction != Vector2.zero)
-		{
-			rb.MovePosition(rb.position + direction * speed * Time.fixedDeltaTime);
-		}
-		
-	}
 
 	//bool success = TryMove(direction);
 	//         if (!success)
@@ -153,4 +114,16 @@ public class DragnDrop : MonoBehaviour{
 	//         }
 	//transform.position = Vector3.MoveTowards(transform.position, rayPoint, speed * Time.deltaTime);
 	//transform.position = rayPoint;
+
+
+
+	//Vector3 direction = (rayPoint - transform.position).normalized;
+			//TryMoveSimple(direction);
+
+			//Vector3 movePosition = transform.position;
+ 
+			//movePosition.x = Mathf.MoveTowards(transform.position.x, rayPoint.x, speed * Time.deltaTime);
+			//movePosition.y = Mathf.MoveTowards(transform.position.y, rayPoint.y, speed * Time.deltaTime);
+ 
+			//rb.MovePosition(movePosition);
 }
