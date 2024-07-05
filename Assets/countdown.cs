@@ -25,6 +25,9 @@ public class countdown : MonoBehaviour
             if ( timeLeft < 0){
                 if(result == "victory"){
                     SceneManager.LoadScene("LevelSelect");
+                } else if(result == "failure"){
+                    string currentSceneName = SceneManager.GetActiveScene().name;
+                    SceneManager.LoadScene(currentSceneName);
                 }
             }
         }
