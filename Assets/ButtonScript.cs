@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class ButtonScript : MonoBehaviour
 {
     public bool completed = false;
+    public int buttonNumber;
     public string levelName;
     levelSelectScript selector;
 
@@ -15,7 +16,7 @@ public class ButtonScript : MonoBehaviour
         selector = FindObjectOfType<levelSelectScript>();
 
         if (scene.name == "LevelSelect"){
-            if (selector.level1Complete == true){
+            if (selector.levelCheck[buttonNumber] == true){
                 completed = true;
                 Button button = gameObject.GetComponent<Button>(); 
                 ColorBlock cb = button.colors;
@@ -36,6 +37,6 @@ public class ButtonScript : MonoBehaviour
     public void LoadLevel()
     {
         SceneManager.LoadScene(levelName);
-        selector.level1Complete = true;
+        selector.levelCheck[buttonNumber] = true;
     }
 }

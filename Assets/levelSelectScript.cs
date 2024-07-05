@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class levelSelectScript : MonoBehaviour
 {
-    public bool level1Complete = false;
+
+    public bool[] levelCheck = {false, false, false, false, false};
 
     public void LoadLevel(string levelName)
     {
