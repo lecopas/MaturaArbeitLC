@@ -5,8 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class levelSelectScript : MonoBehaviour
 {
-    public void LoadLevel1()
+    public bool level1Complete = false;
+
+    public void LoadLevel(string levelName)
     {
-        SceneManager.LoadScene("Minigame1");
+        SceneManager.LoadScene(levelName);
+    }
+
+    public void ActivateButtonCode(ButtonScript button){
+        button.ActivateButton();
     }
 }
