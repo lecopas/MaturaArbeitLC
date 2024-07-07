@@ -134,7 +134,7 @@ PrefabInstance:
     - target: {fileID: 412348576956014968, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
       propertyPath: m_Camera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 961205993}
     - target: {fileID: 412348576956014968, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
       propertyPath: m_PixelPerfect
       value: 1
@@ -746,9 +746,14 @@ MonoBehaviour:
   m_RefResolutionY: 270
   m_UpscaleRT: 0
   m_PixelSnapping: 0
-  m_CropFrameX: 0
-  m_CropFrameY: 0
-  m_StretchFill: 0
+  m_CropFrameX: 1
+  m_CropFrameY: 1
+  m_StretchFill: 1
+--- !u!20 &961205993 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 489629374366086170, guid: 79b73159014202c45a627ec9afc6cfb5, type: 3}
+  m_PrefabInstance: {fileID: 961205988}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1093654145
 PrefabInstance:
   m_ObjectHideFlags: 0
