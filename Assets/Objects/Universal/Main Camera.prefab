@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2624130636755998792}
   - component: {fileID: 489629374366086170}
-  - component: {fileID: 4609719502979208890}
+  - component: {fileID: 2869145765548176640}
   - component: {fileID: 1220569122265449128}
   - component: {fileID: 502867583371354246}
   m_Layer: 0
@@ -86,7 +86,7 @@ Camera:
   m_OcclusionCulling: 0
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &4609719502979208890
+--- !u!114 &2869145765548176640
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

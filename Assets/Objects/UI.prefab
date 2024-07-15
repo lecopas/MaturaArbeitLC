@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 412348576956014968}
   - component: {fileID: 5735449091912539795}
   - component: {fileID: 8364489242559946621}
+  - component: {fileID: 3693939085513773615}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -49,16 +50,16 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 489629374366086170, guid: 79b73159014202c45a627ec9afc6cfb5, type: 3}
+  m_Camera: {fileID: 0}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
-  m_UpdateRectTransformForStandalone: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 1
   m_SortingLayerID: 0
   m_SortingOrder: 100
   m_TargetDisplay: 0
@@ -76,7 +77,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 16
-  m_ScaleFactor: 11.66
+  m_ScaleFactor: 0.01
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
@@ -102,6 +103,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!225 &3693939085513773615
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3140818045292821555}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &6998321410344561698
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,23 +185,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5541107625263296463, guid: 9c44017980282c042b63c1b1f73cc397, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 5541107625263296463, guid: 9c44017980282c042b63c1b1f73cc397, type: 3}
       propertyPath: m_SizeDelta.y
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5541107625263296463, guid: 9c44017980282c042b63c1b1f73cc397, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 37.63
-      objectReference: {fileID: 0}
-    - target: {fileID: 5541107625263296463, guid: 9c44017980282c042b63c1b1f73cc397, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 37.63
-      objectReference: {fileID: 0}
-    - target: {fileID: 5541107625263296463, guid: 9c44017980282c042b63c1b1f73cc397, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 37.63
       objectReference: {fileID: 0}
     - target: {fileID: 5541107625263296463, guid: 9c44017980282c042b63c1b1f73cc397, type: 3}
       propertyPath: m_LocalPosition.x
@@ -220,11 +221,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5541107625263296463, guid: 9c44017980282c042b63c1b1f73cc397, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 83.09
+      value: -350
       objectReference: {fileID: 0}
     - target: {fileID: 5541107625263296463, guid: 9c44017980282c042b63c1b1f73cc397, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -2.85
+      value: -181
       objectReference: {fileID: 0}
     - target: {fileID: 5541107625263296463, guid: 9c44017980282c042b63c1b1f73cc397, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -243,8 +244,8 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7057471716588596355, guid: 9c44017980282c042b63c1b1f73cc397, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartSim
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
