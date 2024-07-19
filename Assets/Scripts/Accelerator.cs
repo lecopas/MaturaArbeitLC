@@ -7,20 +7,70 @@ public class Accelerator : MonoBehaviour
     public Collider2D tempCollider;
     public Rigidbody2D rbParent = null;
     Rigidbody2D rb;
-    public float force = 1;
+
+    mainScript ms;
+    public float force = 0;
+
+    public float acceleration = 0;
+    public float duration = 0;
+    float timeLeft;
+    public float speed = 0;
+
+    bool isDone = false;
+    
 
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        ms = FindAnyObjectByType<mainScript>();
+        timeLeft = duration;
     }
 
     void FixedUpdate()
     {
-        if(rbParent != null) // constantly applies force to object. works with F = m * a
+        if (force != 0)
         {
-            Vector3 forward = transform.TransformDirection(Vector3.up);
-            rbParent.AddForceAtPosition(forward * force, rb.transform.position);
+            if (rbParent != null) // constantly applies force to object. works with F = m * a
+            {
+                Vector3 forward = transform.TransformDirection(Vector3.up);
+                rbParent.AddForceAtPosition(forward * force, rb.transform.position);
+            }
+        } else if (acceleration != 0)
+        {
+            if (rbParent != null)
+            {
+                if (ms.started == true)
+                {
+                    if (duration == 0)
+                    {
+                        
+                        Vector3 forward = transform.TransformDirection(Vector3.up);
+                        rbParent.AddForceAtPosition(forward * (acceleration * rb.mass), rb.transform.position);
+                    }
+                    else
+                    {
+                        if (timeLeft > 0)
+                        {
+                            Vector3 forward = transform.TransformDirection(Vector3.up);
+                            rbParent.AddForceAtPosition(forward * (acceleration * rb.mass), rb.transform.position);
+                            timeLeft -= Time.deltaTime;
+                        }
+                    }
+                }
+            }
+        } else if (speed != 0)
+        {
+            if(ms.started == true)
+            {
+                if(isDone == false)
+                {
+                    Vector3 forward = transform.TransformDirection(Vector3.up);
+                    Vector3 par = rbParent.velocity;
+                    rbParent.velocity = par + (forward * speed);
+                    isDone = true;
+                }
+            }  
         }
     }
 }

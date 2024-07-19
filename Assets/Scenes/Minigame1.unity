@@ -512,6 +512,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 3274156116884598393, guid: acf75a3103068ec4a91d31e38d3faeb7, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5596894531628665666, guid: acf75a3103068ec4a91d31e38d3faeb7, type: 3}
       propertyPath: m_Name
       value: SolidAccelerator
@@ -808,30 +812,6 @@ PrefabInstance:
     - target: {fileID: 6998321410344561698, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
       propertyPath: m_Name
       value: UI
-      objectReference: {fileID: 0}
-    - target: {fileID: 8827994485845204031, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8827994485845204031, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 53.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8827994485845204031, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 53.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8827994485845204031, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 53.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8827994485845204031, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -350
-      objectReference: {fileID: 0}
-    - target: {fileID: 8827994485845204031, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -181
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

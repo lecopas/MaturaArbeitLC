@@ -20,7 +20,7 @@ public class ButtonScript : MonoBehaviour
                 completed = true;
                 Button button = gameObject.GetComponent<Button>(); 
                 ColorBlock cb = button.colors;
-                cb.normalColor = Color.green;
+                cb.normalColor = Color.gray;
                 button.colors = cb;
             }
         }
@@ -30,7 +30,7 @@ public class ButtonScript : MonoBehaviour
         completed = true;
         Button button = gameObject.GetComponent<Button>(); 
         ColorBlock cb = button.colors;
-        cb.normalColor = Color.green;
+        cb.normalColor = Color.gray;
         button.colors = cb;
     }
 

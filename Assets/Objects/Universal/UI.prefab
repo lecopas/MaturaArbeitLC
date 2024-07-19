@@ -192,6 +192,18 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5541107625263296463, guid: 9c44017980282c042b63c1b1f73cc397, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 33.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5541107625263296463, guid: 9c44017980282c042b63c1b1f73cc397, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 33.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5541107625263296463, guid: 9c44017980282c042b63c1b1f73cc397, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 33.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5541107625263296463, guid: 9c44017980282c042b63c1b1f73cc397, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -247,6 +259,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7204095886851141679, guid: 9c44017980282c042b63c1b1f73cc397, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1250974421, guid: cbe4299523c55864d8287255356b8f7d, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

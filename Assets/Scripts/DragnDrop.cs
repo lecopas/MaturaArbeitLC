@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+
 public class DragnDrop : MonoBehaviour{
 	
 	Rigidbody2D rb;
@@ -11,7 +12,8 @@ public class DragnDrop : MonoBehaviour{
 
 	GameObject modified;
 
-	public Accelerator acc;
+	public Accelerator acc = null;
+
 
 	public bool onBlock = false;
 	public bool isReady = true;

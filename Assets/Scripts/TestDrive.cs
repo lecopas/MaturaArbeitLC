@@ -14,8 +14,8 @@ public class TestDrive : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        rb.MovePosition(rb.position + Vector2.down * speed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + Vector2.right * speed * Time.fixedDeltaTime);
     }
 }
