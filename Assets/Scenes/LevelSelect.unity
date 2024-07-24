@@ -123,6 +123,76 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &100819418
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 928359410}
+    m_Modifications:
+    - target: {fileID: 5282358577438864723, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_text
+      value: This is my matura project. It is nowhere close to being done, but you
+        can try out some of the levels, that I have put together so far. To enter
+        a level, just click on one of the buttons.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333340306914859012, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333340306914859012, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333340306914859012, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333340306914859012, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333340306914859012, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333340306914859012, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333340306914859012, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333340306914859012, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333340306914859012, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333340306914859012, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301226023411868314, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_Name
+      value: '[ Dialogue UI ]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7365840423946838135, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_text
+      value: Level-Select
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2050074719894882063, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1827804918}
+  m_SourcePrefab: {fileID: 100100000, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
 --- !u!1001 &209416992
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -342,6 +412,9 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3571536442319560131, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1978687373}
     - targetCorrespondingSourceObject: {fileID: 2404746915303169721, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1906778213}
@@ -567,6 +640,11 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 489629374366086170, guid: 79b73159014202c45a627ec9afc6cfb5, type: 3}
   m_PrefabInstance: {fileID: 209416992}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &928359410 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3571536442319560131, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+  m_PrefabInstance: {fileID: 365839180}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1330548736
 GameObject:
   m_ObjectHideFlags: 0
@@ -665,6 +743,23 @@ MonoBehaviour:
   completed: 0
   buttonNumber: 0
   levelName: Minigame1
+--- !u!1 &1827804914 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2050074719894882063, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+  m_PrefabInstance: {fileID: 100819418}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1827804918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827804914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46b9a0ebf039f9c4c8e0859d54b9029b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1870893712
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -967,6 +1062,11 @@ MonoBehaviour:
   completed: 0
   buttonNumber: 1
   levelName: Minigame2
+--- !u!4 &1978687373 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5333340306914859012, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+  m_PrefabInstance: {fileID: 100819418}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1991372904
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1151,6 +1251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelCheck: 0000000000
+  firstTime: 1
 --- !u!4 &2135563872
 Transform:
   m_ObjectHideFlags: 0

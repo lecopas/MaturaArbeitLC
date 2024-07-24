@@ -8,6 +8,8 @@ public class levelSelectScript : MonoBehaviour
 
     public bool[] levelCheck = {false, false, false, false, false};
 
+    public bool firstTime = true;
+
     public void LoadLevel(string levelName)
     {
         SceneManager.LoadScene(levelName);

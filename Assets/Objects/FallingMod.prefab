@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3639825427254507161}
   - component: {fileID: 3415884084419073087}
   - component: {fileID: 4567608300608034867}
+  - component: {fileID: 6606866981466110963}
   m_Layer: 7
   m_Name: FallingMod
   m_TagString: Modifiable
@@ -158,3 +159,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &6606866981466110963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1739386598591314907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c49ae86450c7a04fad920f20073a491, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
