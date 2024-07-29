@@ -12,6 +12,8 @@ public class DragnDrop : MonoBehaviour{
 
 	GameObject modified;
 
+	public GameObject snapPointer;
+
 	public Accelerator acc = null;
 
 
@@ -49,6 +51,18 @@ public class DragnDrop : MonoBehaviour{
 				Rigidbody2D rbModified = modified.GetComponentInParent<Rigidbody2D>();
 				acc.rbParent = rbModified;
 				acc.tempCollider.enabled = false;
+				if (snapPointer != null && gameObject != null)
+				{
+					Vector3 selfPosition = gameObject.transform.position;
+					selfPosition.x = snapPointer.transform.position.x;
+					gameObject.transform.position = selfPosition;
+				}
+				else
+				{
+					Debug.LogError("snapPointer or gameObject is null");
+					print(snapPointer);
+				}
+				
 			}
         }
 	}
@@ -86,6 +100,9 @@ public class DragnDrop : MonoBehaviour{
 			onBlock = true;
 			modified = other.gameObject;
 		}
+		if (other.tag == "Snap"){
+			snapPointer = other.gameObject;
+		}
 	}
 
 	private void OnTriggerExit2D(Collider2D other)
@@ -100,6 +117,12 @@ public class DragnDrop : MonoBehaviour{
 				transform.parent = null;
 				acc.rbParent = null;
 			}
+		}
+		if (other.tag == "Snap"){
+			if (dragging){
+				snapPointer = null;
+			}
+			
 		}
 	}
 

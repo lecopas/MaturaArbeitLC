@@ -7,6 +7,8 @@ public class showMass : MonoBehaviour
     displayProperty baseText;
     displayProperty newText;
 
+    public Accelerator accel = null;
+
     Rigidbody2D rb;
 
     private void Start()
@@ -15,7 +17,16 @@ public class showMass : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         baseText = FindFirstObjectByType<displayProperty>();
         newText = Instantiate(baseText, baseText.transform.parent);
-        newText.ShowProperty(rb.mass,"kg");
+        if (accel == null){
+            newText.ShowProperty(rb.mass,"kg");
+        } else if (accel.force != 0){
+            newText.ShowProperty(accel.force,"N");
+        } else if (accel.acceleration != 0){
+            newText.ShowProperty(accel.acceleration,"m/s²");
+        } else if (accel.speed != 0){
+            newText.ShowProperty(accel.speed, "m/s");
+        }
+        
 
     }
 

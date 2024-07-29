@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Modifiable
   - selector
+  - Snap
   layers:
   - Default
   - TransparentFX
