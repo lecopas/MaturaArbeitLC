@@ -429,6 +429,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1539177088254532059, guid: b49ca7783b13c854d9b5f7a000f98e00, type: 3}
+      propertyPath: m_text
+      value: Move the block towards the goal
+      objectReference: {fileID: 0}
+    - target: {fileID: 1539177088254532059, guid: b49ca7783b13c854d9b5f7a000f98e00, type: 3}
+      propertyPath: m_isRightToLeft
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1539177088254532059, guid: b49ca7783b13c854d9b5f7a000f98e00, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 1539177088254532059, guid: b49ca7783b13c854d9b5f7a000f98e00, type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
     - target: {fileID: 3036889718164493124, guid: b49ca7783b13c854d9b5f7a000f98e00, type: 3}
       propertyPath: m_Name
       value: LevelText

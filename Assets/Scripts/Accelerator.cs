@@ -73,4 +73,7 @@ public class Accelerator : MonoBehaviour
             }  
         }
     }
+    public void getForce(string input){
+        force = float.Parse(input,System.Globalization.CultureInfo.InvariantCulture);
+    }
 }

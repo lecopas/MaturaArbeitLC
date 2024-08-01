@@ -341,8 +341,16 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3571536442319560131, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 56726482}
+    - targetCorrespondingSourceObject: {fileID: 3571536442319560131, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 280420693}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+--- !u!4 &280420693 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5333340306914859012, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+  m_PrefabInstance: {fileID: 1410342762}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &813571184
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -569,6 +577,82 @@ MonoBehaviour:
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
+--- !u!1001 &1410342762
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 193224350}
+    m_Modifications:
+    - target: {fileID: 5282358577438864723, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_text
+      value: 'Place the Engine <sprite name="Engine"> in the correct position on
+        the Block, so that it hits the Goal <sprite name="Goal"> in order to complete
+        the level. You can move the Engine <sprite name="Engine"> by dragging it
+        with your mouse and you can rotate it with your mouse wheel while you are
+        dragging it. You can press the Button <sprite name="Button"> when you''re
+        ready to staret the simulation.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282358577438864723, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_fontSize
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333340306914859012, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333340306914859012, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333340306914859012, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333340306914859012, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333340306914859012, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333340306914859012, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333340306914859012, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333340306914859012, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333340306914859012, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333340306914859012, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301226023411868314, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_Name
+      value: '[ Dialogue UI ]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7365840423946838135, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_text
+      value: Level 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
 --- !u!20 &1634034749 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 489629374366086170, guid: 79b73159014202c45a627ec9afc6cfb5, type: 3}
