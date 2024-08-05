@@ -135,6 +135,17 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 961205993}
+    - target: {fileID: 1342292129654143250, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+      propertyPath: m_text
+      value: 'Sadly that was incorrect. Press RESTART to try again.
+
+
+
+
+
+        (tipp:
+        the resulting force needs to be zero)'
+      objectReference: {fileID: 0}
     - target: {fileID: 3571536442319560131, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.26801
@@ -175,6 +186,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5065057113230442933, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+      propertyPath: m_Name
+      value: LevelStartBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 5065057113230442933, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6311657520046727027, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -182,6 +201,14 @@ PrefabInstance:
     - target: {fileID: 6998321410344561698, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
       propertyPath: m_Name
       value: UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 7160062803053435506, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 658819700}
+    - target: {fileID: 7160062803053435506, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Reset
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -194,6 +221,11 @@ PrefabInstance:
 --- !u!4 &135642049 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3571536442319560131, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+  m_PrefabInstance: {fileID: 135642048}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &135642050 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4604588310787989638, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
   m_PrefabInstance: {fileID: 135642048}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &214970371
@@ -261,6 +293,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 930994120678798931, guid: 15ac79553e9186c4fb3aa8bc086bd14b, type: 3}
+      propertyPath: GameOverText
+      value: 
+      objectReference: {fileID: 135642050}
     - target: {fileID: 1000627121796717754, guid: 15ac79553e9186c4fb3aa8bc086bd14b, type: 3}
       propertyPath: m_Name
       value: Main
@@ -629,6 +665,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeTotal: 5
   result: victory
+  expectedResult: 
+  playerResult: 
 --- !u!1 &700973576
 GameObject:
   m_ObjectHideFlags: 0

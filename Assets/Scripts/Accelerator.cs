@@ -15,6 +15,7 @@ public class Accelerator : MonoBehaviour
     public float duration = 0;
     float timeLeft;
     public float speed = 0;
+    public float mod = 1;
 
     bool isDone = false;
     
@@ -50,7 +51,7 @@ public class Accelerator : MonoBehaviour
                     }
                     else
                     {
-                        if (timeLeft > 0)
+                        if (timeLeft > 0.02)
                         {
                             Vector3 forward = transform.TransformDirection(Vector3.up);
                             rbParent.AddForceAtPosition(forward * (acceleration * rb.mass), rb.transform.position);
@@ -75,5 +76,8 @@ public class Accelerator : MonoBehaviour
     }
     public void getForce(string input){
         force = float.Parse(input,System.Globalization.CultureInfo.InvariantCulture);
+    }
+    public void getAcceleration(string input){
+        acceleration = float.Parse(input,System.Globalization.CultureInfo.InvariantCulture) * mod;
     }
 }

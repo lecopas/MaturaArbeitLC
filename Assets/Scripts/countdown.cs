@@ -8,6 +8,8 @@ public class countdown : MonoBehaviour
     mainScript ms;
     public float timeTotal;
     public string result;
+    public string expectedResult = null;
+    public string playerResult;
     float timeLeft;
     // Start is called before the first frame update
     void Start()
@@ -24,12 +26,23 @@ public class countdown : MonoBehaviour
 
             if ( timeLeft < 0){
                 if(result == "victory"){
-                    SceneManager.LoadScene("LevelSelect");
+                    if(expectedResult != null){
+                        if(playerResult == expectedResult){
+                            SceneManager.LoadScene("LevelSelect");
+                        } else {
+                            ms.Death();
+                        }
+                    } else {
+                        SceneManager.LoadScene("LevelSelect");
+                    }
+                    
                 } else if(result == "failure"){
-                    string currentSceneName = SceneManager.GetActiveScene().name;
-                    SceneManager.LoadScene(currentSceneName);
+                    ms.Death();
                 }
             }
         }
+    }
+    public void GetPlayerResult(string input){
+        playerResult = input;
     }
 }

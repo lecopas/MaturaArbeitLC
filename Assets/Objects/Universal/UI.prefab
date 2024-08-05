@@ -49,7 +49,7 @@ Canvas:
   m_GameObject: {fileID: 3140818045292821555}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 1
@@ -146,6 +146,7 @@ Transform:
   m_Children:
   - {fileID: 2404746915303169721}
   - {fileID: 4449087689907453027}
+  - {fileID: 1169302317549461182}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3920012050040878064
@@ -375,4 +376,93 @@ PrefabInstance:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 779317305999434772, guid: 23051356f76319545b0bce074188cb86, type: 3}
   m_PrefabInstance: {fileID: 3994382100476598391}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6501480988533409466
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3571536442319560131}
+    m_Modifications:
+    - target: {fileID: 2050074719894882063, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4135502566064757960, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282358577438864723, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_text
+      value: 'Place the Engine <sprite name="Engine"> in the correct position on
+        the Block, so that it hits the Goal <sprite name="Goal"> in order to complete
+        the level. You can move the Engine <sprite name="Engine"> by dragging it
+        with your mouse and you can rotate it with your mouse wheel while you are
+        dragging it. You can press the Button <sprite name="Button"> when you''re
+        ready to staret the simulation.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282358577438864723, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_fontSize
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333340306914859012, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333340306914859012, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333340306914859012, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333340306914859012, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333340306914859012, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333340306914859012, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333340306914859012, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333340306914859012, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333340306914859012, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333340306914859012, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301226023411868314, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_Name
+      value: '[ Dialogue UI ]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7365840423946838135, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_text
+      value: Level 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+--- !u!4 &1169302317549461182 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5333340306914859012, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+  m_PrefabInstance: {fileID: 6501480988533409466}
   m_PrefabAsset: {fileID: 0}

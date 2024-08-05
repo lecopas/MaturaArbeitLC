@@ -462,6 +462,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 930994120678798931, guid: 15ac79553e9186c4fb3aa8bc086bd14b, type: 3}
+      propertyPath: GameOverText
+      value: 
+      objectReference: {fileID: 1224800018}
     - target: {fileID: 1000627121796717754, guid: 15ac79553e9186c4fb3aa8bc086bd14b, type: 3}
       propertyPath: m_Name
       value: Main
@@ -539,6 +543,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeTotal: 5
   result: failure
+  expectedResult: 
+  playerResult: 
 --- !u!224 &1044660740 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 779317305999434772, guid: 23051356f76319545b0bce074188cb86, type: 3}
@@ -556,6 +562,17 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 396495861}
+    - target: {fileID: 1342292129654143250, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+      propertyPath: m_text
+      value: 'Sadly that was incorrect. Press RESTART to try again.
+
+
+
+
+
+        (tipp:
+        the resulting velocity has to be facing the goal)'
+      objectReference: {fileID: 0}
     - target: {fileID: 3571536442319560131, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.26801
@@ -608,6 +625,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 7160062803053435506, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 460188703}
+    - target: {fileID: 7160062803053435506, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Reset
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -622,6 +647,11 @@ PrefabInstance:
 --- !u!4 &1224800017 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3571536442319560131, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+  m_PrefabInstance: {fileID: 1224800016}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1224800018 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4604588310787989638, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
   m_PrefabInstance: {fileID: 1224800016}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1432400272
