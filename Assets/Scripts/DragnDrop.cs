@@ -23,6 +23,7 @@ public class DragnDrop : MonoBehaviour{
 
 	public bool dragging = false;
 	private float distance;
+	mainScript ms;
 
 
 	public ContactFilter2D movementFilter;
@@ -32,6 +33,7 @@ public class DragnDrop : MonoBehaviour{
 
 	private void Start(){
 		rb = GetComponent<Rigidbody2D>();
+		ms = FindFirstObjectByType<mainScript>();
 	}
 
 	void OnMouseDown(){
@@ -68,28 +70,32 @@ public class DragnDrop : MonoBehaviour{
 	}
 
 	void Update(){
-		if (dragging){
-
-			//Rotation Code
-			
-			transform.Rotate(Vector3.forward * rotateSpeed * Time.fixedDeltaTime * Input.mouseScrollDelta.y);
-
-			//Movement Code
-
-			dragCol.enabled = false;
-			acc.tempCollider.enabled = true;
-			gameObject.transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
-
-			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            Vector3 rayPoint = ray.GetPoint(distance);
-
-			rb.MovePosition(rayPoint);
-		}
-        else
+		if(ms.started == false)
         {
-			gameObject.transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
-			dragCol.enabled = true;
-			acc.tempCollider.enabled = false;
+			if (dragging)
+			{
+
+				//Rotation Code
+
+				transform.Rotate(Vector3.forward * rotateSpeed * Time.fixedDeltaTime * Input.mouseScrollDelta.y);
+
+				//Movement Code
+
+				dragCol.enabled = false;
+				acc.tempCollider.enabled = true;
+				gameObject.transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+
+				Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+				Vector3 rayPoint = ray.GetPoint(distance);
+
+				rb.MovePosition(rayPoint);
+			}
+			else
+			{
+				gameObject.transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+				dragCol.enabled = true;
+				acc.tempCollider.enabled = false;
+			}
 		}
 	}
 

@@ -62,16 +62,19 @@ public class Accelerator : MonoBehaviour
             }
         } else if (speed != 0)
         {
-            if(ms.started == true)
+            if(rbParent != null)
             {
-                if(isDone == false)
+                if (ms.started == true)
                 {
-                    Vector3 forward = transform.TransformDirection(Vector3.up);
-                    Vector3 par = rbParent.velocity;
-                    rbParent.velocity = par + (forward * speed);
-                    isDone = true;
+                    if (isDone == false)
+                    {
+                        Vector3 forward = transform.TransformDirection(Vector3.up);
+                        Vector3 par = rbParent.velocity;
+                        rbParent.velocity = par + (forward * speed);
+                        isDone = true;
+                    }
                 }
-            }  
+            } 
         }
     }
     public void getForce(string input){

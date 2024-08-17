@@ -7,6 +7,9 @@ TagManager:
   - Modifiable
   - selector
   - Snap
+  - startText
+  - gameOverText
+  - choiceCopy
   layers:
   - Default
   - TransparentFX

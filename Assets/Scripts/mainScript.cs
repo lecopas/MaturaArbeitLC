@@ -5,10 +5,32 @@ using UnityEngine.SceneManagement;
 
 public class mainScript : MonoBehaviour
 {
-    public GameObject GameOverText;
+    
+    public levelSelectScript selector;
+    GameObject got;
+    GameObject startBox;
 
     public bool started = false;
-    // Start is called before the first frame update
+    private void Start()
+    {
+        selector = FindAnyObjectByType<levelSelectScript>();
+        got = GameObject.FindGameObjectWithTag("gameOverText");
+        got.SetActive(false);
+
+        startBox = GameObject.FindGameObjectWithTag("startText");
+        if(selector.currentLevelCheck == false)
+        {
+            startBox.SetActive(true);
+            selector.currentLevelCheck = true;
+            
+        } else
+        {
+            startBox.SetActive(false);
+            
+        }
+        
+
+    }
     public void StartSim()
     {
         started = true;
@@ -19,7 +41,7 @@ public class mainScript : MonoBehaviour
     }
 
     public void Death(){
-        GameOverText.SetActive(true);
+        got.SetActive(true);
     }
 
     public void Reset(){

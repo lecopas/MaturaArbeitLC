@@ -423,7 +423,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 629918351}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2094910919}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36ed937a301d9a2499cd750765f20c49, type: 3}
   m_Name: 
@@ -529,6 +529,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 2016364293}
+    - target: {fileID: 412348576956014968, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1342292129654143250, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
       propertyPath: m_text
       value: 'Sadly that was incorrect. Press RESTART to try again.
@@ -539,6 +543,46 @@ PrefabInstance:
 
         (tipp:
         the resulting force has to be zero)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404746915303169721, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404746915303169721, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404746915303169721, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404746915303169721, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404746915303169721, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404746915303169721, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404746915303169721, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404746915303169721, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404746915303169721, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404746915303169721, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3571536442319560131, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -578,6 +622,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3571536442319560131, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4604588310787989638, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5735449091912539795, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+      propertyPath: m_PresetInfoIsWorld
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6311657520046727027, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
@@ -1363,6 +1415,8 @@ MonoBehaviour:
   result: victory
   expectedResult: 
   playerResult: 
+  correctObject: {fileID: 0}
+  selectedObject: {fileID: 0}
 --- !u!224 &2129226039 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 779317305999434772, guid: 23051356f76319545b0bce074188cb86, type: 3}

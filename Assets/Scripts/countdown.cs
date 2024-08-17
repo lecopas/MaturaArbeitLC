@@ -11,6 +11,9 @@ public class countdown : MonoBehaviour
     public string expectedResult = null;
     public string playerResult;
     float timeLeft;
+
+    public GameObject correctObject = null;
+    public GameObject selectedObject = null;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,16 +29,26 @@ public class countdown : MonoBehaviour
 
             if ( timeLeft < 0){
                 if(result == "victory"){
-                    if(expectedResult != null){
+                    if(expectedResult != "null"){
                         if(playerResult == expectedResult){
                             SceneManager.LoadScene("LevelSelect");
                         } else {
                             ms.Death();
                         }
-                    } else {
+                    } else if(correctObject != null)
+                    {
+                        if(selectedObject == correctObject)
+                        {
+                            SceneManager.LoadScene("LevelSelect");
+                        } else
+                        {
+                            ms.Death();
+                        }
+                    } else
+                    {
                         SceneManager.LoadScene("LevelSelect");
                     }
-                    
+
                 } else if(result == "failure"){
                     ms.Death();
                 }

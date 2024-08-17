@@ -413,11 +413,11 @@ GameObject:
   - component: {fileID: 670656005860440764}
   m_Layer: 0
   m_Name: LevelStartBox
-  m_TagString: Untagged
+  m_TagString: startText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6793115914638922370
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1379,11 +1379,11 @@ GameObject:
   - component: {fileID: 9198996866613755775}
   m_Layer: 0
   m_Name: GameOverText
-  m_TagString: Untagged
+  m_TagString: gameOverText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4614462143899692414
 RectTransform:
   m_ObjectHideFlags: 0
