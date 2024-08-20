@@ -13,6 +13,7 @@ public class mainScript : MonoBehaviour
     public bool started = false;
     private void Start()
     {
+        Time.timeScale = 1;
         selector = FindAnyObjectByType<levelSelectScript>();
         got = GameObject.FindGameObjectWithTag("gameOverText");
         got.SetActive(false);
@@ -42,6 +43,7 @@ public class mainScript : MonoBehaviour
 
     public void Death(){
         got.SetActive(true);
+        Time.timeScale = 0;
     }
 
     public void Reset(){

@@ -400,7 +400,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4604588310787989638, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6311657520046727027, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1176,6 +1176,8 @@ MonoBehaviour:
   result: victory
   expectedResult: 
   playerResult: 
+  correctObject: {fileID: 0}
+  selectedObject: {fileID: 0}
 --- !u!1 &1540453088 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4047483613578863573, guid: 7c0fbd468074b4a4f98797ccacbe088e, type: 3}
