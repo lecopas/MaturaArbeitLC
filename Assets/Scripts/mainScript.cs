@@ -7,8 +7,8 @@ public class mainScript : MonoBehaviour
 {
     
     levelSelectScript selector;
-    GameObject got;
-    GameObject startBox;
+    public GameObject got;
+    public GameObject startBox;
 
     public GameObject pauseScreen;
 
@@ -18,18 +18,19 @@ public class mainScript : MonoBehaviour
     {
         Time.timeScale = 1;
         selector = FindAnyObjectByType<levelSelectScript>();
-        got = GameObject.FindGameObjectWithTag("gameOverText");
+        //got = GameObject.FindGameObjectWithTag("gameOverText");
         got.SetActive(false);
 
-        startBox = GameObject.FindGameObjectWithTag("startText");
+        //startBox = GameObject.FindGameObjectWithTag("startText");
+        ToggleStartbox(true);
         if(selector.currentLevelCheck == false)
         {
-            startBox.SetActive(true);
+            ToggleStartbox(true);
             selector.currentLevelCheck = true;
             
         } else
         {
-            startBox.SetActive(false);
+            ToggleStartbox(false);
             
         }
     }
@@ -81,5 +82,14 @@ public class mainScript : MonoBehaviour
     {
         Time.timeScale = 1;
         SceneManager.LoadScene("LevelSelect");
+    }
+
+    public void ToggleStartbox(bool inp)
+    {
+        if (startBox != null)
+        {
+            startBox.SetActive(inp);
+        }
+        
     }
 }

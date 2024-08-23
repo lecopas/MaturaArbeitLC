@@ -236,6 +236,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 2712071343987009201}
     m_Modifications:
     - target: {fileID: 930994120678798931, guid: 15ac79553e9186c4fb3aa8bc086bd14b, type: 3}
+      propertyPath: got
+      value: 
+      objectReference: {fileID: 4728622215837449031}
+    - target: {fileID: 930994120678798931, guid: 15ac79553e9186c4fb3aa8bc086bd14b, type: 3}
       propertyPath: pauseScreen
       value: 
       objectReference: {fileID: 5191992452565346314}
@@ -481,7 +485,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5065057113230442933, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5126757678541510550, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -532,7 +536,8 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5065057113230442933, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 3571536442319560131, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
       insertIndex: 2
