@@ -524,7 +524,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 460188702}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6518342}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36ed937a301d9a2499cd750765f20c49, type: 3}
   m_Name: 
@@ -545,6 +545,8 @@ MonoBehaviour:
   result: failure
   expectedResult: 
   playerResult: 
+  correctObject: {fileID: 0}
+  selectedObject: {fileID: 0}
 --- !u!224 &1044660740 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 779317305999434772, guid: 23051356f76319545b0bce074188cb86, type: 3}
@@ -634,7 +636,8 @@ PrefabInstance:
       value: Reset
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5065057113230442933, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 3571536442319560131, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
       insertIndex: -1

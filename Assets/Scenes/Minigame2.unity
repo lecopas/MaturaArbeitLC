@@ -211,7 +211,8 @@ PrefabInstance:
       value: Reset
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5065057113230442933, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 3571536442319560131, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
       insertIndex: -1
@@ -667,6 +668,8 @@ MonoBehaviour:
   result: victory
   expectedResult: 
   playerResult: 
+  correctObject: {fileID: 0}
+  selectedObject: {fileID: 0}
 --- !u!1 &700973576
 GameObject:
   m_ObjectHideFlags: 0

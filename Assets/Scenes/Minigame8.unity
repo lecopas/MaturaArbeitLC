@@ -773,7 +773,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 1478038717}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1602480291}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36ed937a301d9a2499cd750765f20c49, type: 3}
   m_Name: 
@@ -794,6 +794,8 @@ MonoBehaviour:
   result: victory
   expectedResult: 8
   playerResult: 
+  correctObject: {fileID: 0}
+  selectedObject: {fileID: 0}
 --- !u!1001 &1677697967
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1140,7 +1142,8 @@ PrefabInstance:
       value: Reset
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5065057113230442933, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 3571536442319560131, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
       insertIndex: -1
