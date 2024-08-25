@@ -778,7 +778,7 @@ PrefabInstance:
     - target: {fileID: 7567787793093311980, guid: 937caffa37c63174fb96ba9b0ecb0f97, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 692559626}
     - target: {fileID: 7567787793093311980, guid: 937caffa37c63174fb96ba9b0ecb0f97, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: GetPlayerResult
