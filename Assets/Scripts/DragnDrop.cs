@@ -79,6 +79,15 @@ public class DragnDrop : MonoBehaviour{
 
 				transform.Rotate(Vector3.forward * rotateSpeed * Time.fixedDeltaTime * Input.mouseScrollDelta.y);
 
+				if (Input.GetKey("a"))
+				{
+					transform.Rotate(Vector3.forward * rotateSpeed* 0.5f * Time.fixedDeltaTime );
+				}
+                if (Input.GetKey("d"))
+                {
+					transform.Rotate(Vector3.forward * rotateSpeed * 0.5f * Time.fixedDeltaTime * -1);
+				}
+
 				//Movement Code
 
 				dragCol.enabled = false;
