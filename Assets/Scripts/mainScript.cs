@@ -92,4 +92,10 @@ public class mainScript : MonoBehaviour
         }
         
     }
+    public void Victory()
+    {
+        selector.levelCheck[selector.currentLevelNumber] = true;
+        Time.timeScale = 1;
+        SceneManager.LoadScene("LevelSelect");
+    }
 }

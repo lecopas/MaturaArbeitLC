@@ -140,6 +140,7 @@ public class DragnDrop : MonoBehaviour{
 			
 		}
 	}
+	
 
 
 	//bool success = TryMove(direction);

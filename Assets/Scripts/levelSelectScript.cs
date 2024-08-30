@@ -12,6 +12,8 @@ public class levelSelectScript : MonoBehaviour
 
     public bool currentLevelCheck = false;
 
+    public int currentLevelNumber;
+
     public void LoadLevel(string levelName)
     {
         SceneManager.LoadScene(levelName);

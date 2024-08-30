@@ -37,7 +37,8 @@ public class ButtonScript : MonoBehaviour
     public void LoadLevel()
     {
         SceneManager.LoadScene(levelName);
-        selector.levelCheck[buttonNumber] = true;
+        //selector.levelCheck[buttonNumber] = true;
+        selector.currentLevelNumber = buttonNumber;
         selector.currentLevelCheck = false;
     }
 }

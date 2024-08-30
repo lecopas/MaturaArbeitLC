@@ -31,7 +31,7 @@ public class countdown : MonoBehaviour
                 if(result == "victory"){
                     if(expectedResult != "null"){
                         if(playerResult == expectedResult){
-                            SceneManager.LoadScene("LevelSelect");
+                            ms.Victory();
                         } else {
                             ms.Death();
                         }
@@ -39,7 +39,7 @@ public class countdown : MonoBehaviour
                     {
                         if(selectedObject == correctObject)
                         {
-                            SceneManager.LoadScene("LevelSelect");
+                            ms.Victory();
                         } else
                         {
                             ms.Death();
