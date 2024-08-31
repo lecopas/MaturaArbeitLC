@@ -14,6 +14,15 @@ public class ButtonScript : MonoBehaviour
     void Start(){
         Scene scene = SceneManager.GetActiveScene();
         selector = FindObjectOfType<levelSelectScript>();
+        if(buttonNumber != 0)
+        {
+            if(selector.levelCheck[buttonNumber -1] == false)
+            {
+                Button button = gameObject.GetComponent<Button>();
+                button.interactable = false;
+
+            }
+        }
 
         if (scene.name == "LevelSelect"){
             if (selector.levelCheck[buttonNumber] == true){
@@ -27,7 +36,6 @@ public class ButtonScript : MonoBehaviour
     }
 
     public void ActivateButton(){
-        completed = true;
         Button button = gameObject.GetComponent<Button>(); 
         ColorBlock cb = button.colors;
         cb.normalColor = Color.gray;
@@ -36,9 +44,12 @@ public class ButtonScript : MonoBehaviour
 
     public void LoadLevel()
     {
+        
         SceneManager.LoadScene(levelName);
         //selector.levelCheck[buttonNumber] = true;
         selector.currentLevelNumber = buttonNumber;
         selector.currentLevelCheck = false;
+       
+        
     }
 }
