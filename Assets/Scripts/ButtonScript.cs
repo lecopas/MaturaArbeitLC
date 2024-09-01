@@ -44,7 +44,18 @@ public class ButtonScript : MonoBehaviour
 
     public void LoadLevel()
     {
-        
+        if(buttonNumber != 0){
+            if(selector.levelCheck[buttonNumber -1] == false)
+            {
+                selector.levelLegit = false;
+
+            } else
+            {
+                selector.levelLegit = true;
+            }
+        } else {
+            selector.levelLegit = true;
+        }
         SceneManager.LoadScene(levelName);
         //selector.levelCheck[buttonNumber] = true;
         selector.currentLevelNumber = buttonNumber;

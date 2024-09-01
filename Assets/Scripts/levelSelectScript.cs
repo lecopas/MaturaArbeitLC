@@ -12,7 +12,11 @@ public class levelSelectScript : MonoBehaviour
 
     public bool currentLevelCheck = false;
 
+    public bool levelLegit = true;
+
     public int currentLevelNumber;
+
+    
 
     public void LoadLevel(string levelName)
     {
