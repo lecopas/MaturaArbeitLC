@@ -83,4 +83,7 @@ public class Accelerator : MonoBehaviour
     public void getAcceleration(string input){
         acceleration = float.Parse(input,System.Globalization.CultureInfo.InvariantCulture) * mod;
     }
+    public void getSpeed(string input){
+        speed = float.Parse(input,System.Globalization.CultureInfo.InvariantCulture) * mod;
+    }
 }
