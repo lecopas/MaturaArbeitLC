@@ -133,7 +133,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4047483613578863573, guid: 7c0fbd468074b4a4f98797ccacbe088e, type: 3}
       propertyPath: m_Name
-      value: FloatingMod
+      value: Mr. Blue
       objectReference: {fileID: 0}
     - target: {fileID: 4646285124032206339, guid: 7c0fbd468074b4a4f98797ccacbe088e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -141,7 +141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4646285124032206339, guid: 7c0fbd468074b4a4f98797ccacbe088e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.020019531
+      value: 0.33
       objectReference: {fileID: 0}
     - target: {fileID: 4646285124032206339, guid: 7c0fbd468074b4a4f98797ccacbe088e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -175,6 +175,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4822938310034130197, guid: 7c0fbd468074b4a4f98797ccacbe088e, type: 3}
+      propertyPath: m_Size.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822938310034130197, guid: 7c0fbd468074b4a4f98797ccacbe088e, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822938310034130197, guid: 7c0fbd468074b4a4f98797ccacbe088e, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822938310034130197, guid: 7c0fbd468074b4a4f98797ccacbe088e, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.875
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822938310034130197, guid: 7c0fbd468074b4a4f98797ccacbe088e, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7185465419840944786, guid: 7c0fbd468074b4a4f98797ccacbe088e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b45d7adfa5998cc449995d4a8f50ce94, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -369,7 +393,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 304541721885878013, guid: 937caffa37c63174fb96ba9b0ecb0f97, type: 3}
       propertyPath: m_text
-      value: "Enter Force\u200B"
+      value: "Enter Speed\n\u200B"
       objectReference: {fileID: 0}
     - target: {fileID: 1268842480648852076, guid: 937caffa37c63174fb96ba9b0ecb0f97, type: 3}
       propertyPath: m_Name
@@ -527,6 +551,15 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 379237476979964575, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1020127224432923272, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_text
+      value: A baby is falling from a hight of 12 meters. Mr Blue is 20 m away on
+        the x-axis. How fast does he have to run with g = 10 m/s^2?
+      objectReference: {fileID: 0}
     - target: {fileID: 2712071343987009201, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1867.1803
@@ -579,6 +612,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Base
       objectReference: {fileID: 0}
+    - target: {fileID: 8452239754311628777, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: _title
+      value: 
+      objectReference: {fileID: 1648532572}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -730,6 +767,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4303381611211923290, guid: f6817fccd398dd84787eb615e53e46f8, type: 3}
   m_PrefabInstance: {fileID: 724165244}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1648532572 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 379237476979964575, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+  m_PrefabInstance: {fileID: 1265877580}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1764149850 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5224890974022724838, guid: 05d25b5b84ba3a548967f1f0857f6659, type: 3}
