@@ -47,4 +47,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Minigame12.unity
     guid: 5e9b8beb4a7a098499ab96e1700ca73e
+  - enabled: 1
+    path: Assets/Scenes/Balancing Rocket.unity
+    guid: f5466c9b61dd0bf41bcd54feacaccd08
+  - enabled: 1
+    path: Assets/Scenes/Minigame14.unity
+    guid: 1a6386ab882735e45898a5a5fabce7d3
   m_configObjects: {}

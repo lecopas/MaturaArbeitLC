@@ -612,6 +612,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Base
       objectReference: {fileID: 0}
+    - target: {fileID: 7843440837663630035, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_text
+      value: 'Sadly that was incorrect. Press RESTART to try again.
+
+
+
+
+
+        (tipp:
+        try figuring out the time the baby takes to fall first)'
+      objectReference: {fileID: 0}
     - target: {fileID: 8452239754311628777, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: _title
       value: 

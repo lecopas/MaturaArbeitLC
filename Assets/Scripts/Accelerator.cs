@@ -47,14 +47,14 @@ public class Accelerator : MonoBehaviour
                     {
                         
                         Vector3 forward = transform.TransformDirection(Vector3.up);
-                        rbParent.AddForceAtPosition(forward * (acceleration * rb.mass), rb.transform.position);
+                        rbParent.AddForceAtPosition(forward * (acceleration * rbParent.mass), rb.transform.position);
                     }
                     else
                     {
                         if (timeLeft > 0.02)
                         {
                             Vector3 forward = transform.TransformDirection(Vector3.up);
-                            rbParent.AddForceAtPosition(forward * (acceleration * rb.mass), rb.transform.position);
+                            rbParent.AddForceAtPosition(forward * (acceleration * rbParent.mass), rb.transform.position);
                             timeLeft -= Time.deltaTime;
                         }
                     }
