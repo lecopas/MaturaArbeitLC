@@ -22,8 +22,12 @@ public class DragnDrop : MonoBehaviour{
 	public float rotateSpeed = 1;
 
 	public bool dragging = false;
+	public bool rotating = false;
+
+	public GameObject rotationPoint;
 	private float distance;
 	mainScript ms;
+
 
 
 	public ContactFilter2D movementFilter;
@@ -40,6 +44,15 @@ public class DragnDrop : MonoBehaviour{
 		distance = Vector3.Distance(transform.position, Camera.main.transform.position);
 		dragging = true;
 	}
+
+	void OnMouseOver () {
+		if(Input.GetMouseButtonDown(1))
+		{
+			rotating = true;	
+		}
+	}
+
+
 
 	void OnMouseUp(){
 		rb.velocity = new Vector3(0,0,0);
@@ -72,10 +85,27 @@ public class DragnDrop : MonoBehaviour{
 	void Update(){
 		if(ms.started == false)
         {
+			
+			if(rotating){
+				Vector3 mousePos = Input.mousePosition;
+				mousePos.z = 5.23f;
+
+				Vector3 objectPos = Camera.main.WorldToScreenPoint (transform.position);
+				mousePos.x = mousePos.x - objectPos.x;
+				mousePos.y = mousePos.y - objectPos.y;
+
+				float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
+				transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle - 90)); //I made a mistake when creating the prefab so now I have to subtract 90°
+				if(Input.GetMouseButtonUp(1))
+					{
+						rotating = false;
+					}
+			}
+
 			if (dragging)
 			{
 
-				//Rotation Code
+				 
 
 				transform.Rotate(Vector3.forward * rotateSpeed * Time.fixedDeltaTime * Input.mouseScrollDelta.y);
 
