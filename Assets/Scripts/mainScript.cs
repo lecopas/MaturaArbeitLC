@@ -14,6 +14,8 @@ public class mainScript : MonoBehaviour
 
     public bool started = false;
     bool isDead = false;
+
+    public DragnDrop currDnd;
     private void Start()
     {
         Time.timeScale = 1;

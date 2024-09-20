@@ -48,6 +48,7 @@ public class DragnDrop : MonoBehaviour{
 	void OnMouseOver () {
 		if(Input.GetMouseButtonDown(1))
 		{
+			//ms.currDnd = gameObject;
 			rotating = true;	
 		}
 	}
@@ -170,7 +171,11 @@ public class DragnDrop : MonoBehaviour{
 			
 		}
 	}
-	
+	public void Rotate(float rotation)
+	{
+		transform.rotation = Quaternion.Euler(new Vector3(0, 0, rotation - 90)); //I made a mistake when creating the prefab so now I have to subtract 90°
+	}
+
 
 
 	//bool success = TryMove(direction);
@@ -189,12 +194,12 @@ public class DragnDrop : MonoBehaviour{
 
 
 	//Vector3 direction = (rayPoint - transform.position).normalized;
-			//TryMoveSimple(direction);
+	//TryMoveSimple(direction);
 
-			//Vector3 movePosition = transform.position;
- 
-			//movePosition.x = Mathf.MoveTowards(transform.position.x, rayPoint.x, speed * Time.deltaTime);
-			//movePosition.y = Mathf.MoveTowards(transform.position.y, rayPoint.y, speed * Time.deltaTime);
- 
-			//rb.MovePosition(movePosition);
+	//Vector3 movePosition = transform.position;
+
+	//movePosition.x = Mathf.MoveTowards(transform.position.x, rayPoint.x, speed * Time.deltaTime);
+	//movePosition.y = Mathf.MoveTowards(transform.position.y, rayPoint.y, speed * Time.deltaTime);
+
+	//rb.MovePosition(movePosition);
 }
