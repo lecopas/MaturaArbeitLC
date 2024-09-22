@@ -211,11 +211,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 304541721885878013, guid: 937caffa37c63174fb96ba9b0ecb0f97, type: 3}
       propertyPath: m_text
-      value: "Enter Acceleration\u200B"
+      value: "\u200B"
       objectReference: {fileID: 0}
     - target: {fileID: 745984052036547807, guid: 937caffa37c63174fb96ba9b0ecb0f97, type: 3}
       propertyPath: m_Camera
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 745984052036547807, guid: 937caffa37c63174fb96ba9b0ecb0f97, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 745984052036547807, guid: 937caffa37c63174fb96ba9b0ecb0f97, type: 3}
       propertyPath: m_RenderMode
@@ -226,12 +230,26 @@ PrefabInstance:
       value: PlayerInput
       objectReference: {fileID: 0}
     - target: {fileID: 1354308426940567180, guid: 937caffa37c63174fb96ba9b0ecb0f97, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 133.614
+      objectReference: {fileID: 0}
+    - target: {fileID: 1354308426940567180, guid: 937caffa37c63174fb96ba9b0ecb0f97, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -561
+      value: -544.0511
       objectReference: {fileID: 0}
     - target: {fileID: 1354308426940567180, guid: 937caffa37c63174fb96ba9b0ecb0f97, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 92
+      objectReference: {fileID: 0}
+    - target: {fileID: 2880111641525725222, guid: 937caffa37c63174fb96ba9b0ecb0f97, type: 3}
+      propertyPath: m_text
+      value: 'Enter Acceleration
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2880111641525725222, guid: 937caffa37c63174fb96ba9b0ecb0f97, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4712306501205796448, guid: 937caffa37c63174fb96ba9b0ecb0f97, type: 3}
       propertyPath: m_Pivot.x
@@ -315,7 +333,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7567787793093311980, guid: 937caffa37c63174fb96ba9b0ecb0f97, type: 3}
       propertyPath: m_Text
-      value: Enter Acceleration
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7567787793093311980, guid: 937caffa37c63174fb96ba9b0ecb0f97, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
@@ -673,6 +691,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2550911148356695065, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2712071343987009201, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1867.1803
@@ -712,6 +734,14 @@ PrefabInstance:
     - target: {fileID: 2712071343987009201, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082294418745119402, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_Name
+      value: RotationInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133282479376485463, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.30004883
       objectReference: {fileID: 0}
     - target: {fileID: 7726849071112176996, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_Name
@@ -769,6 +799,7 @@ MonoBehaviour:
   playerResult: 
   correctObject: {fileID: 0}
   selectedObject: {fileID: 0}
+  visibleTimer: 1
 --- !u!114 &386766614 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7494787896326693540, guid: cc5d90810349375479595a19e2ae9047, type: 3}

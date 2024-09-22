@@ -646,6 +646,7 @@ MonoBehaviour:
   playerResult: 
   correctObject: {fileID: 0}
   selectedObject: {fileID: 0}
+  visibleTimer: 1
 --- !u!114 &692559627 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7494787896326693540, guid: cc5d90810349375479595a19e2ae9047, type: 3}
@@ -676,6 +677,10 @@ PrefabInstance:
     - target: {fileID: 1354308426940567180, guid: 937caffa37c63174fb96ba9b0ecb0f97, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -102
+      objectReference: {fileID: 0}
+    - target: {fileID: 2880111641525725222, guid: 937caffa37c63174fb96ba9b0ecb0f97, type: 3}
+      propertyPath: m_text
+      value: Enter Number
       objectReference: {fileID: 0}
     - target: {fileID: 4712306501205796448, guid: 937caffa37c63174fb96ba9b0ecb0f97, type: 3}
       propertyPath: m_Pivot.x
@@ -771,9 +776,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7567787793093311980, guid: 937caffa37c63174fb96ba9b0ecb0f97, type: 3}
       propertyPath: m_Text
-      value: 'Enter Number
-
-'
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7567787793093311980, guid: 937caffa37c63174fb96ba9b0ecb0f97, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target

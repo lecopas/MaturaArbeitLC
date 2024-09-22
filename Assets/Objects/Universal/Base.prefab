@@ -514,6 +514,10 @@ PrefabInstance:
       propertyPath: GameOverText
       value: 
       objectReference: {fileID: 4728622215837449031}
+    - target: {fileID: 930994120678798931, guid: 15ac79553e9186c4fb3aa8bc086bd14b, type: 3}
+      propertyPath: RotationInput
+      value: 
+      objectReference: {fileID: 5776320921663007219}
     - target: {fileID: 1000627121796717754, guid: 15ac79553e9186c4fb3aa8bc086bd14b, type: 3}
       propertyPath: m_Name
       value: Main
@@ -758,6 +762,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 110
       objectReference: {fileID: 0}
+    - target: {fileID: 4486564029315950315, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7494787896326693540}
+    - target: {fileID: 4486564029315950315, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GetRotation
+      objectReference: {fileID: 0}
     - target: {fileID: 4604588310787989638, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -852,5 +864,10 @@ GameObject:
 --- !u!4 &5758165546813883906 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3571536442319560131, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+  m_PrefabInstance: {fileID: 9113518138802953153}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5776320921663007219 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3337208212256240178, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
   m_PrefabInstance: {fileID: 9113518138802953153}
   m_PrefabAsset: {fileID: 0}

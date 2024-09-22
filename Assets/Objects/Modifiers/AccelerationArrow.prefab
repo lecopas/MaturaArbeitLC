@@ -36,6 +36,7 @@ Transform:
   m_Children:
   - {fileID: 5297211335745408047}
   - {fileID: 4393621577377759819}
+  - {fileID: 3749517948225767455}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2321770765221879709
@@ -108,6 +109,7 @@ MonoBehaviour:
   acceleration: 5
   duration: 1
   speed: 0
+  mod: 1
 --- !u!50 &6442347092541638633
 Rigidbody2D:
   serializedVersion: 4
@@ -148,11 +150,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dragCol: {fileID: 1075161195683048297}
+  snapPointer: {fileID: 0}
+  inputPoint: {fileID: 6692367965579098607}
   acc: {fileID: 7526628226993915541}
   onBlock: 0
   isReady: 0
   rotateSpeed: 500
   dragging: 0
+  rotating: 0
   movementFilter:
     useTriggers: 0
     useLayerMask: 0
@@ -366,3 +371,34 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.53369474, y: 1.2537246}
   m_EdgeRadius: 0
+--- !u!1 &6692367965579098607
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3749517948225767455}
+  m_Layer: 0
+  m_Name: InputPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3749517948225767455
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6692367965579098607}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.323, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7354991347385898798}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

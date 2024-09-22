@@ -14,6 +14,8 @@ public class DragnDrop : MonoBehaviour{
 
 	public GameObject snapPointer;
 
+	public GameObject inputPoint;
+
 	public Accelerator acc = null;
 
 
@@ -24,7 +26,6 @@ public class DragnDrop : MonoBehaviour{
 	public bool dragging = false;
 	public bool rotating = false;
 
-	public GameObject rotationPoint;
 	private float distance;
 	mainScript ms;
 
@@ -48,8 +49,36 @@ public class DragnDrop : MonoBehaviour{
 	void OnMouseOver () {
 		if(Input.GetMouseButtonDown(1))
 		{
-			//ms.currDnd = gameObject;
-			rotating = true;	
+			if(rotating == true){
+				ms.RotationInput.SetActive(false);
+				DragnDrop[] mods = FindObjectsOfType(typeof(DragnDrop)) as DragnDrop[];
+					foreach(DragnDrop item in mods)
+					{
+						item.rotating = false;
+					}
+				//rotating = false;
+			} else {
+				DragnDrop[] mods = FindObjectsOfType(typeof(DragnDrop)) as DragnDrop[];
+					foreach(DragnDrop item in mods)
+					{
+						item.rotating = false;
+					}
+				rotating = true;
+
+				
+				if(inputPoint == null){
+					Vector3 worldPosition = transform.position; // Get the world position of the GameObject
+					Vector3 screenPosition = Camera.main.WorldToScreenPoint(worldPosition); // Convert world position to screen position
+					ms.RotationInput.transform.position = screenPosition; // Update the position of the newText in the UI
+				} else{
+					Vector3 worldPosition = inputPoint.transform.position; // Get the world position of the inputPoint
+					Vector3 screenPosition = Camera.main.WorldToScreenPoint(worldPosition); // Convert world position to screen position
+					ms.RotationInput.transform.position = screenPosition; // Update the position of the newText in the UI
+				}
+				
+				ms.RotationInput.SetActive(true);
+			}
+				
 		}
 	}
 
@@ -87,21 +116,22 @@ public class DragnDrop : MonoBehaviour{
 		if(ms.started == false)
         {
 			
-			if(rotating){
-				Vector3 mousePos = Input.mousePosition;
-				mousePos.z = 5.23f;
+			
+			//if(rotating){
+				//Vector3 mousePos = Input.mousePosition;
+				//mousePos.z = 5.23f;
 
-				Vector3 objectPos = Camera.main.WorldToScreenPoint (transform.position);
-				mousePos.x = mousePos.x - objectPos.x;
-				mousePos.y = mousePos.y - objectPos.y;
+				//Vector3 objectPos = Camera.main.WorldToScreenPoint (transform.position);
+				//mousePos.x = mousePos.x - objectPos.x;
+				//mousePos.y = mousePos.y - objectPos.y;
 
-				float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
-				transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle - 90)); //I made a mistake when creating the prefab so now I have to subtract 90°
-				if(Input.GetMouseButtonUp(1))
-					{
-						rotating = false;
-					}
-			}
+				//float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
+				//transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle - 90)); //I made a mistake when creating the prefab so now I have to subtract 90°
+				//if(Input.GetMouseButtonUp(1))
+					//{
+						//rotating = false;
+					//}
+			//}
 
 			if (dragging)
 			{
@@ -173,7 +203,10 @@ public class DragnDrop : MonoBehaviour{
 	}
 	public void Rotate(float rotation)
 	{
-		transform.rotation = Quaternion.Euler(new Vector3(0, 0, rotation - 90)); //I made a mistake when creating the prefab so now I have to subtract 90°
+		if (rotating == true){
+			transform.rotation = Quaternion.Euler(new Vector3(0, 0, rotation - 90)); //I made a mistake when creating the prefab so now I have to subtract 90°
+		}
+		
 	}
 
 

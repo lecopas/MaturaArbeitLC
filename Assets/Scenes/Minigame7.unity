@@ -1145,6 +1145,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2550911148356695065, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2712071343987009201, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1867.1803
@@ -1455,6 +1459,7 @@ MonoBehaviour:
   playerResult: 
   correctObject: {fileID: 0}
   selectedObject: {fileID: 0}
+  visibleTimer: 1
 --- !u!1001 &1667526967255342083
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1463,6 +1468,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1328002343}
     m_Modifications:
+    - target: {fileID: 745984052036547807, guid: 937caffa37c63174fb96ba9b0ecb0f97, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1268842480648852076, guid: 937caffa37c63174fb96ba9b0ecb0f97, type: 3}
       propertyPath: m_Name
       value: PlayerInput

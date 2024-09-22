@@ -15,7 +15,8 @@ public class mainScript : MonoBehaviour
     public bool started = false;
     bool isDead = false;
 
-    public DragnDrop currDnd;
+    public GameObject RotationInput;
+    public float mainRotation;
     private void Start()
     {
         Time.timeScale = 1;
@@ -106,5 +107,13 @@ public class mainScript : MonoBehaviour
         
         Time.timeScale = 1;
         SceneManager.LoadScene("LevelSelect");
+    }
+    public void GetRotation(string gotten){
+        mainRotation = float.Parse(gotten,System.Globalization.CultureInfo.InvariantCulture);
+        DragnDrop[] mods = FindObjectsOfType(typeof(DragnDrop)) as DragnDrop[];
+            foreach(DragnDrop item in mods)
+            {
+                item.Rotate(mainRotation);
+            }
     }
 }
