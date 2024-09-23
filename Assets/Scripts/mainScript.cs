@@ -9,6 +9,7 @@ public class mainScript : MonoBehaviour
     
     levelSelectScript selector;
     public GameObject got;
+    public GameObject victoryBox;
     public GameObject startBox;
 
     public GameObject pauseScreen;
@@ -98,6 +99,7 @@ public class mainScript : MonoBehaviour
         }
         
     }
+
     public void Victory()
     {
         if(selector != null){
@@ -106,10 +108,13 @@ public class mainScript : MonoBehaviour
                 selector.levelCheck[selector.currentLevelNumber] = true;
             }
         }
+        if(victoryBox == null){
+            LevelSelect();
+        } else {
+            victoryBox.SetActive(true);
+            Time.timeScale = 0;
+        }
         
-        
-        Time.timeScale = 1;
-        SceneManager.LoadScene("LevelSelect");
     }
     public void GetRotation(string gotten){
         mainRotation = float.Parse(gotten,System.Globalization.CultureInfo.InvariantCulture);
