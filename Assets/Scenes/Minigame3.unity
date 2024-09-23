@@ -189,6 +189,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5776320921663007219, guid: cc5d90810349375479595a19e2ae9047, type: 3}
   m_PrefabInstance: {fileID: 2024776701}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &874494995 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4628225149492133162, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+  m_PrefabInstance: {fileID: 2024776701}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874494993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1162213749 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 795515536432980761, guid: 8de9a6f33c557ab42ab4be65e6a7c655, type: 3}
@@ -277,7 +288,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2216215389399668085, guid: 8de9a6f33c557ab42ab4be65e6a7c655, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.64278764
       objectReference: {fileID: 0}
     - target: {fileID: 2216215389399668085, guid: 8de9a6f33c557ab42ab4be65e6a7c655, type: 3}
       propertyPath: m_LocalRotation.x
@@ -289,7 +300,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2216215389399668085, guid: 8de9a6f33c557ab42ab4be65e6a7c655, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0.7660445
       objectReference: {fileID: 0}
     - target: {fileID: 2216215389399668085, guid: 8de9a6f33c557ab42ab4be65e6a7c655, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -301,7 +312,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2216215389399668085, guid: 8de9a6f33c557ab42ab4be65e6a7c655, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 8536100039694114758, guid: 8de9a6f33c557ab42ab4be65e6a7c655, type: 3}
       propertyPath: m_Name
@@ -443,9 +454,105 @@ PrefabInstance:
       value: -0.30004883
       objectReference: {fileID: 0}
     - target: {fileID: 4628225149492133162, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_OnSelect.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4628225149492133162, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4628225149492133162, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_OnDeselect.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4628225149492133162, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_OnSelect.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4628225149492133162, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4628225149492133162, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_OnDeselect.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4628225149492133162, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_OnSelect.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2024776704}
+    - target: {fileID: 4628225149492133162, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4628225149492133162, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_OnDeselect.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2024776704}
+    - target: {fileID: 4628225149492133162, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_OnSelect.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4628225149492133162, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4628225149492133162, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_OnSelect.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowRotation
+      objectReference: {fileID: 0}
+    - target: {fileID: 4628225149492133162, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_OnDeselect.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4628225149492133162, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4628225149492133162, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_OnDeselect.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowRotation
+      objectReference: {fileID: 0}
+    - target: {fileID: 4628225149492133162, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2024776704}
+    - target: {fileID: 4628225149492133162, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_OnSelect.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: mainScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4628225149492133162, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4628225149492133162, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_OnDeselect.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: mainScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4628225149492133162, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_OnSelect.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4628225149492133162, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4628225149492133162, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_OnSelect.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4628225149492133162, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4628225149492133162, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_OnDeselect.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494787896326693540, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: tmp_if
+      value: 
+      objectReference: {fileID: 874494995}
     - target: {fileID: 7494787896326693540, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: RotationInput
       value: 

@@ -141,6 +141,10 @@ PrefabInstance:
         can try out some of the levels, that I have put together so far. To enter
         a level, just click on one of the buttons.
       objectReference: {fileID: 0}
+    - target: {fileID: 5289653369593253172, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -6.9952393
+      objectReference: {fileID: 0}
     - target: {fileID: 5333340306914859012, guid: 8fec35c8155f3c747aae928a8e253f80, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -353,6 +357,34 @@ PrefabInstance:
     - target: {fileID: 3571536442319560131, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486564029315950315, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+      propertyPath: m_OnSelect.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486564029315950315, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+      propertyPath: m_OnSelect.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486564029315950315, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+      propertyPath: m_OnSelect.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1232013265}
+    - target: {fileID: 4486564029315950315, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+      propertyPath: m_OnSelect.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486564029315950315, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+      propertyPath: m_OnSelect.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetTextWithoutNotify
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486564029315950315, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+      propertyPath: m_OnSelect.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TMPro.TMP_InputField, Unity.TextMeshPro
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486564029315950315, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+      propertyPath: m_OnSelect.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5735449091912539795, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
       propertyPath: m_ScaleFactor
@@ -1691,6 +1723,17 @@ MonoBehaviour:
   completed: 0
   buttonNumber: 5
   levelName: Minigame6
+--- !u!114 &1232013265 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4486564029315950315, guid: 865e15561ba97424d9717bfc42d0a7d0, type: 3}
+  m_PrefabInstance: {fileID: 365839180}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1330548736
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class mainScript : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class mainScript : MonoBehaviour
     bool isDead = false;
 
     public GameObject RotationInput;
+    public TMP_InputField tmp_if;
+        
     public float mainRotation;
     private void Start()
     {
@@ -115,5 +118,10 @@ public class mainScript : MonoBehaviour
             {
                 item.Rotate(mainRotation);
             }
+    }
+
+    public void ShowRotation()
+    {
+        tmp_if.text = mainRotation.ToString();
     }
 }
