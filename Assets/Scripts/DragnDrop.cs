@@ -49,29 +49,35 @@ public class DragnDrop : MonoBehaviour{
 	void OnMouseOver () {
 		if(Input.GetMouseButtonDown(1))
 		{
-			if(rotating == true){
-				ms.RotationInput.SetActive(false);
-				DragnDrop[] mods = FindObjectsOfType(typeof(DragnDrop)) as DragnDrop[];
-					foreach(DragnDrop item in mods)
+			if(ms.started == false)
+            {
+				if (rotating == true)
+				{
+					ms.RotationInput.SetActive(false);
+					DragnDrop[] mods = FindObjectsOfType(typeof(DragnDrop)) as DragnDrop[];
+					foreach (DragnDrop item in mods)
 					{
 						item.rotating = false;
 					}
-				//rotating = false;
-			} else {
-				DragnDrop[] mods = FindObjectsOfType(typeof(DragnDrop)) as DragnDrop[];
-					foreach(DragnDrop item in mods)
+					//rotating = false;
+				}
+				else
+				{
+					DragnDrop[] mods = FindObjectsOfType(typeof(DragnDrop)) as DragnDrop[];
+					foreach (DragnDrop item in mods)
 					{
 						item.rotating = false;
 					}
-				rotating = true;
-				ms.mainRotation = transform.localEulerAngles.z + 90;
-				if(ms.mainRotation >= 360)
-                {
-					ms.mainRotation -= 360;
-                }
-				ms.RotationInput.SetActive(true);
+					rotating = true;
+					ms.mainRotation = transform.localEulerAngles.z + 90;
+					if (ms.mainRotation >= 360)
+					{
+						ms.mainRotation -= 360;
+					}
+					ms.ShowRotation();
+					ms.RotationInput.SetActive(true);
+				}
 			}
-				
 		}
 	}
 
@@ -128,11 +134,13 @@ public class DragnDrop : MonoBehaviour{
 
 			if(rotating == true)
             {
+				
 				if (inputPoint == null)
 				{
 					Vector3 worldPosition = transform.position; // Get the world position of the GameObject
 					Vector3 screenPosition = Camera.main.WorldToScreenPoint(worldPosition); // Convert world position to screen position
 					ms.RotationInput.transform.position = screenPosition; // Update the position of the newText in the UI
+					print("inputpoint is zero");
 				}
 				else
 				{

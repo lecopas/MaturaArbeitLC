@@ -61,6 +61,7 @@ public class mainScript : MonoBehaviour
     public void StartSim()
     {
         started = true;
+        RotationInput.SetActive(false);
         GameObject[] intObjects = GameObject.FindGameObjectsWithTag("Modifiable");
         foreach (GameObject thing in intObjects)
             thing.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
@@ -108,6 +109,7 @@ public class mainScript : MonoBehaviour
                 selector.levelCheck[selector.currentLevelNumber] = true;
             }
         }
+        isDead = true;
         if(victoryBox == null){
             LevelSelect();
         } else {
