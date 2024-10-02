@@ -23,7 +23,10 @@ public class countdown : MonoBehaviour
         countText = FindFirstObjectByType<visbleCountdown>();
         ms = FindObjectOfType<mainScript>();
         timeLeft = timeTotal;
-        countText.DisplayTime(timeLeft);
+        if(countText != null){
+            countText.DisplayTime(timeLeft);
+        }
+        
     }
 
     // Update is called once per frame
@@ -32,7 +35,11 @@ public class countdown : MonoBehaviour
 
         if(ms.started == true){
             timeLeft -= Time.deltaTime;
-            countText.DisplayTime(Mathf.Round(timeLeft * 100.0f)*0.01f);
+            float displayedTime = Mathf.Floor(timeLeft * 100f) * 0.01f;  // Floor to 2 decimal places
+            if(countText != null){
+                countText.DisplayTime(displayedTime);
+            }
+            
 
             if ( timeLeft < 0){
                 if(result == "victory"){

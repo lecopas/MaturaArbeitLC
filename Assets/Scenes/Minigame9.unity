@@ -146,6 +146,7 @@ MonoBehaviour:
   playerResult: 
   correctObject: {fileID: 46038155}
   selectedObject: {fileID: 0}
+  visibleTimer: 0
 --- !u!1 &46038155 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1284610923996458838, guid: bd4157e1b2b434a408c5f7aa4dfca46d, type: 3}
@@ -207,6 +208,7 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 3553703209659291671, guid: cc5d90810349375479595a19e2ae9047, type: 3}
     - {fileID: 5766662614255053406, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+    - {fileID: 8933298717978080257, guid: cc5d90810349375479595a19e2ae9047, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5758165546813883906, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       insertIndex: 0
