@@ -65,6 +65,9 @@ public class mainScript : MonoBehaviour
         GameObject[] intObjects = GameObject.FindGameObjectsWithTag("Modifiable");
         foreach (GameObject thing in intObjects)
             thing.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+        GameObject[] unModObjects = GameObject.FindGameObjectsWithTag("unModifiable");
+        foreach (GameObject thing in unModObjects)
+            thing.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
             
     }
     public void Resume()

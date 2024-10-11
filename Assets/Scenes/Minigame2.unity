@@ -146,6 +146,7 @@ MonoBehaviour:
   playerResult: 
   correctObject: {fileID: 0}
   selectedObject: {fileID: 0}
+  visibleTimer: 1
 --- !u!1001 &214970371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -213,7 +214,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1020127224432923272, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_text
-      value: Stop the block
+      value: Stop the car form hitting the wall
       objectReference: {fileID: 0}
     - target: {fileID: 2712071343987009201, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_LocalPosition.x
@@ -465,7 +466,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 690359130534412648, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 690359130534412648, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -509,8 +510,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1739386598591314907, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
       propertyPath: m_Name
-      value: FallingMod
+      value: Car
       objectReference: {fileID: 0}
+    - target: {fileID: 3415884084419073087, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
+      propertyPath: m_Size.x
+      value: 2.4128284
+      objectReference: {fileID: 0}
+    - target: {fileID: 3415884084419073087, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0048718452
+      objectReference: {fileID: 0}
+    - target: {fileID: 3415884084419073087, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3415884084419073087, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3639825427254507161, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3639825427254507161, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3639825427254507161, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4de2583dc833dc249af015e49cd0f8f2, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -528,16 +557,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 2059886880}
     m_Modifications:
     - target: {fileID: 909359704818110176, guid: a10630481f41aab43ab0d1a0920a866a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 909359704818110176, guid: a10630481f41aab43ab0d1a0920a866a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 909359704818110176, guid: a10630481f41aab43ab0d1a0920a866a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 909359704818110176, guid: a10630481f41aab43ab0d1a0920a866a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.5955
+      value: 1.307
       objectReference: {fileID: 0}
     - target: {fileID: 909359704818110176, guid: a10630481f41aab43ab0d1a0920a866a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.038999915
+      value: 0.039
       objectReference: {fileID: 0}
     - target: {fileID: 909359704818110176, guid: a10630481f41aab43ab0d1a0920a866a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -570,6 +607,14 @@ PrefabInstance:
     - target: {fileID: 909359704818110176, guid: a10630481f41aab43ab0d1a0920a866a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 909359704818110176, guid: a10630481f41aab43ab0d1a0920a866a, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 914523090859048213, guid: a10630481f41aab43ab0d1a0920a866a, type: 3}
+      propertyPath: m_SortingOrder
+      value: -33
       objectReference: {fileID: 0}
     - target: {fileID: 1569774639912622535, guid: a10630481f41aab43ab0d1a0920a866a, type: 3}
       propertyPath: rbParent
