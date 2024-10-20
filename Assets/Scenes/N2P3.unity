@@ -217,9 +217,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1020127224432923272, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_text
-      value: The Orange Space Dudes ship weighs 200'000kg and needs a constant acceleration
-        of 9.81 m/s^2 to stay perfectly level. The Purple Pacer on the left weighs
-        300'000kg. What acceleration does it need to stay still?
+      value: "The Orange Space Dudes ship weighs 200'000kg and needs a constant acceleration
+        of 9.81 m/s\xB2 to stay perfectly level. The Purple Pacer on the left weighs
+        300'000kg. What acceleration does it need to stay still? "
       objectReference: {fileID: 0}
     - target: {fileID: 2712071343987009201, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_LocalPosition.x
@@ -572,7 +572,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c49ae86450c7a04fad920f20073a491, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  showRotation: 0
   accel: {fileID: 1473514623}
+  rotationPoint: {fileID: 0}
 --- !u!1001 &1559504458
 PrefabInstance:
   m_ObjectHideFlags: 0

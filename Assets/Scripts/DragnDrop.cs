@@ -147,6 +147,12 @@ public class DragnDrop : MonoBehaviour{
 					Vector3 worldPosition = inputPoint.transform.position; // Get the world position of the inputPoint
 					Vector3 screenPosition = Camera.main.WorldToScreenPoint(worldPosition); // Convert world position to screen position
 					ms.RotationInput.transform.position = screenPosition; // Update the position of the newText in the UI
+					ms.mainRotation = transform.localEulerAngles.z + 90;
+					if (ms.mainRotation >= 360)
+					{
+						ms.mainRotation -= 360;
+					}
+					ms.ShowRotation();
 				}
 			}
 

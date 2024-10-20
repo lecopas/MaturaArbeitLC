@@ -276,8 +276,8 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1020127224432923272, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_text
-      value: Jimmy is barreling towards the edge of a cliff at 10m/s. You can only
-        apply an acceleration of 5m/s^2 for 2 seconds to save him. Hurry!
+      value: "Jimmy is barreling towards the edge of a cliff at 10m/s. You can only
+        apply an acceleration of 5m/s\xB2 for 2 seconds to save him."
       objectReference: {fileID: 0}
     - target: {fileID: 2712071343987009201, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_LocalPosition.x
@@ -471,7 +471,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c49ae86450c7a04fad920f20073a491, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  showRotation: 0
   accel: {fileID: 655095698}
+  rotationPoint: {fileID: 0}
 --- !u!1001 &778458930
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -608,6 +610,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 4de2583dc833dc249af015e49cd0f8f2, type: 3}
+    - target: {fileID: 3639825427254507161, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7aea8d701bd5cee479db7e6721614d75, type: 2}
     - target: {fileID: 4567608300608034867, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
       propertyPath: m_Mass
       value: 1
@@ -677,7 +683,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c49ae86450c7a04fad920f20073a491, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  showRotation: 0
   accel: {fileID: 1845873356}
+  rotationPoint: {fileID: 0}
 --- !u!50 &2130437743 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 4567608300608034867, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}

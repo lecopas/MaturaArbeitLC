@@ -559,8 +559,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1020127224432923272, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_text
-      value: A baby is falling from a height of 12 meters. Mr Blue is 20 m away on
-        the x-axis. How fast does he have to run with g = 10 m/s^2?
+      value: "A baby is falling from a height of 12 meters. Mr Blue is 20 m away
+        on the x-axis. How fast does he have to run with g = 10 m/s\xB2?"
       objectReference: {fileID: 0}
     - target: {fileID: 2712071343987009201, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_LocalPosition.x

@@ -19,6 +19,7 @@ public class mainScript : MonoBehaviour
 
     public GameObject RotationInput;
     public TMP_InputField tmp_if;
+    public TMP_Text baseText;
         
     public float mainRotation;
     private void Start()
@@ -132,6 +133,12 @@ public class mainScript : MonoBehaviour
 
     public void ShowRotation()
     {
-        tmp_if.text = mainRotation.ToString();
+        //tmp_if.text = mainRotation.ToString();
+        float tempRot = mainRotation;
+        baseText.text = mainRotation.ToString() + "°";
+    }
+    public void ResetInput()
+    {
+        tmp_if.text = null;
     }
 }
