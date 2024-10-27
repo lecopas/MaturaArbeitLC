@@ -711,6 +711,18 @@ PrefabInstance:
         Upon collision, both squares combine
         their vectors to create a new resultant vector.'
       objectReference: {fileID: 0}
+    - target: {fileID: 6289760431899894008, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_Color.b
+      value: 0.9339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 6289760431899894008, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 6289760431899894008, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9339623
+      objectReference: {fileID: 0}
     - target: {fileID: 7726849071112176996, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_Name
       value: Base

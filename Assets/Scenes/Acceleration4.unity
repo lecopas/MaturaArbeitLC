@@ -293,7 +293,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c49ae86450c7a04fad920f20073a491, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  showRotation: 0
   accel: {fileID: 1335034945}
+  rotationPoint: {fileID: 0}
 --- !u!1001 &1374557354
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -353,6 +355,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -0.30004883
       objectReference: {fileID: 0}
+    - target: {fileID: 4940137382540625578, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_text
+      value: 'That awnser was correct.
+
+
+        Gravity applies a constant acceleration
+        on an object, meaning you can''t balance it out by adding velocity.'
+      objectReference: {fileID: 0}
     - target: {fileID: 6289760431899894008, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_Color.b
       value: 0.9433962
@@ -377,7 +387,7 @@ PrefabInstance:
 
 
 
-        (tipp:
+        (hint:
         gravity applies a constant acceleration)'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -739,7 +749,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c49ae86450c7a04fad920f20073a491, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  showRotation: 0
   accel: {fileID: 1783695058}
+  rotationPoint: {fileID: 0}
 --- !u!50 &1921972912 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 513986607000862207, guid: 7c0fbd468074b4a4f98797ccacbe088e, type: 3}

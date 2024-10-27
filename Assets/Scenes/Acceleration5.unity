@@ -618,6 +618,15 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -0.30004883
       objectReference: {fileID: 0}
+    - target: {fileID: 4940137382540625578, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_text
+      value: 'That awnser was correct.
+
+
+        You easily solve this problem by
+        first calculating how long the baby needs to reach the ground and dividing
+        12m by that time.'
+      objectReference: {fileID: 0}
     - target: {fileID: 5593778555363232545, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 159.2
@@ -638,7 +647,7 @@ PrefabInstance:
 
 
 
-        (tipp:
+        (hint:
         try figuring out the time the baby takes to fall first)'
       objectReference: {fileID: 0}
     - target: {fileID: 8452239754311628777, guid: cc5d90810349375479595a19e2ae9047, type: 3}
@@ -795,6 +804,18 @@ PrefabInstance:
     - target: {fileID: 7432522337764734521, guid: 1ec28ed162866c949849cb9f28a0c069, type: 3}
       propertyPath: m_Name
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871607231143266337, guid: 1ec28ed162866c949849cb9f28a0c069, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871607231143266337, guid: 1ec28ed162866c949849cb9f28a0c069, type: 3}
+      propertyPath: m_Color.g
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871607231143266337, guid: 1ec28ed162866c949849cb9f28a0c069, type: 3}
+      propertyPath: m_Color.r
+      value: 0.5849056
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -133,7 +133,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 690359130534412648, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
       propertyPath: m_LocalScale.x
-      value: 18.588558
+      value: 21.386137
       objectReference: {fileID: 0}
     - target: {fileID: 690359130534412648, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
       propertyPath: m_LocalScale.y
@@ -141,7 +141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 690359130534412648, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.92
+      value: -12.5212
       objectReference: {fileID: 0}
     - target: {fileID: 690359130534412648, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -323,6 +323,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -0.30004883
       objectReference: {fileID: 0}
+    - target: {fileID: 4940137382540625578, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_text
+      value: 'That awnser was correct.
+
+
+        The acceleration-vector has to be
+        facing the oposite direction of speed vector to slow it down.'
+      objectReference: {fileID: 0}
     - target: {fileID: 6289760431899894008, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_Color.b
       value: 0.9339623
@@ -347,8 +355,8 @@ PrefabInstance:
 
 
 
-        (tipp:
-        the acceleration vector should probably be facing to the left)'
+        (hint:
+        think about the direction the acceleration vector is facing)'
       objectReference: {fileID: 0}
     - target: {fileID: 8466555577478057921, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_BackGroundColor.b
@@ -528,7 +536,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7526628226993915541, guid: d8d4c06132264254a84051d6f5d798cd, type: 3}
       propertyPath: duration
-      value: 1.3
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -552,7 +560,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 690359130534412648, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.3
+      value: 3.25
       objectReference: {fileID: 0}
     - target: {fileID: 690359130534412648, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -594,6 +602,10 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 2.3834925
       objectReference: {fileID: 0}
+    - target: {fileID: 3415884084419073087, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: ec8ccc6feab415543952d01973431d63, type: 2}
     - target: {fileID: 3415884084419073087, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
       propertyPath: m_Offset.x
       value: -0.038737774

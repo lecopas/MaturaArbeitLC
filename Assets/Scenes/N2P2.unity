@@ -295,7 +295,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c49ae86450c7a04fad920f20073a491, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  showRotation: 0
   accel: {fileID: 151654303}
+  rotationPoint: {fileID: 0}
 --- !u!1001 &368249599
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -416,6 +418,10 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4567608300608034867, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: ec8ccc6feab415543952d01973431d63, type: 2}
     m_RemovedComponents:
     - {fileID: 3639825427254507161, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
     m_RemovedGameObjects: []
@@ -541,6 +547,19 @@ PrefabInstance:
     - target: {fileID: 4133282479376485463, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -0.30004883
+      objectReference: {fileID: 0}
+    - target: {fileID: 4940137382540625578, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_text
+      value: 'That awnser was correct.
+
+
+        Even though they have different
+        masses, they will still stop accelerating once they collide, because the
+        total force applied to each of them is equal.
+
+
+        (more stuff about
+        inelastic collisions)'
       objectReference: {fileID: 0}
     - target: {fileID: 7726849071112176996, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_Name
@@ -1032,7 +1051,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c49ae86450c7a04fad920f20073a491, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  showRotation: 0
   accel: {fileID: 1520902331}
+  rotationPoint: {fileID: 0}
 --- !u!1 &1541363644
 GameObject:
   m_ObjectHideFlags: 0
@@ -1437,7 +1458,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c49ae86450c7a04fad920f20073a491, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  showRotation: 0
   accel: {fileID: 1729463784}
+  rotationPoint: {fileID: 0}
 --- !u!1001 &1841295191
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1530,7 +1553,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c49ae86450c7a04fad920f20073a491, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  showRotation: 0
   accel: {fileID: 1841295193}
+  rotationPoint: {fileID: 0}
 --- !u!4 &1952180057 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 909359704818110176, guid: a10630481f41aab43ab0d1a0920a866a, type: 3}
@@ -1559,7 +1584,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c49ae86450c7a04fad920f20073a491, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  showRotation: 0
   accel: {fileID: 1952180060}
+  rotationPoint: {fileID: 0}
 --- !u!1 &1986175545 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1739386598591314907, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
@@ -1709,6 +1736,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 897f81c722f107f4fab8c86ede97bdde, type: 3}
+    - target: {fileID: 4567608300608034867, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: ec8ccc6feab415543952d01973431d63, type: 2}
     - target: {fileID: 4567608300608034867, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
       propertyPath: m_Constraints
       value: 7

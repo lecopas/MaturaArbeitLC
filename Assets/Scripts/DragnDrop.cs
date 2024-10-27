@@ -100,13 +100,7 @@ public class DragnDrop : MonoBehaviour{
 					Vector3 selfPosition = gameObject.transform.position;
 					selfPosition.x = snapPointer.transform.position.x;
 					gameObject.transform.position = selfPosition;
-				}
-				else
-				{
-					Debug.LogError("snapPointer or gameObject is null");
-					print(snapPointer);
-				}
-				
+				}	
 			}
         }
 	}

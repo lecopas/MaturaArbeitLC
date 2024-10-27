@@ -752,12 +752,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: Base
       objectReference: {fileID: 0}
+    - target: {fileID: 7843440837663630035, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_text
+      value: 'Sadly that was incorrect. Press RESTART to try again.
+
+
+
+
+
+        (hint:
+        the flag is equal distance from the square on both the x- and y-axis.)'
+      objectReference: {fileID: 0}
     - target: {fileID: 7865749246092070991, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -6.9952393
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 412859630794794048, guid: cc5d90810349375479595a19e2ae9047, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5950460935090422553, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       insertIndex: 0
