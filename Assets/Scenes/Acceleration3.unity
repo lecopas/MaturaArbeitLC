@@ -356,19 +356,19 @@ PrefabInstance:
 
 
         (hint:
-        think about the direction the acceleration vector is facing)'
+        think about the direction the acceleration-vector is facing)'
       objectReference: {fileID: 0}
     - target: {fileID: 8466555577478057921, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_BackGroundColor.b
-      value: 0.764151
+      value: 0.6415094
       objectReference: {fileID: 0}
     - target: {fileID: 8466555577478057921, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_BackGroundColor.g
-      value: 0.7034988
+      value: 0.53398603
       objectReference: {fileID: 0}
     - target: {fileID: 8466555577478057921, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_BackGroundColor.r
-      value: 0.40730688
+      value: 0.4206123
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

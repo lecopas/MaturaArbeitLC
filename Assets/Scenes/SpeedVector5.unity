@@ -403,7 +403,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4646285124032206339, guid: 7c0fbd468074b4a4f98797ccacbe088e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.03
+      value: 1.45
       objectReference: {fileID: 0}
     - target: {fileID: 4646285124032206339, guid: 7c0fbd468074b4a4f98797ccacbe088e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -441,6 +441,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4822938310034130197, guid: 7c0fbd468074b4a4f98797ccacbe088e, type: 3}
+      propertyPath: m_Size.x
+      value: 2.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822938310034130197, guid: 7c0fbd468074b4a4f98797ccacbe088e, type: 3}
+      propertyPath: m_Size.y
+      value: 0.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822938310034130197, guid: 7c0fbd468074b4a4f98797ccacbe088e, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822938310034130197, guid: 7c0fbd468074b4a4f98797ccacbe088e, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7185465419840944786, guid: 7c0fbd468074b4a4f98797ccacbe088e, type: 3}
+      propertyPath: m_Size.x
+      value: 2.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7185465419840944786, guid: 7c0fbd468074b4a4f98797ccacbe088e, type: 3}
+      propertyPath: m_Size.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7185465419840944786, guid: 7c0fbd468074b4a4f98797ccacbe088e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9f06fbac186708941afa5f66fb9de43a, type: 3}
+    - target: {fileID: 7185465419840944786, guid: 7c0fbd468074b4a4f98797ccacbe088e, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7185465419840944786, guid: 7c0fbd468074b4a4f98797ccacbe088e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7aea8d701bd5cee479db7e6721614d75, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -727,7 +763,8 @@ MonoBehaviour:
 
 
     (hint:
-    you can right click on the velocity vector and enter a negative rotation)'
+    If two vectors with equal magnitudes are facing away from another, they will
+    cancel eachother out)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -894,7 +931,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1539177088254532059, guid: b49ca7783b13c854d9b5f7a000f98e00, type: 3}
       propertyPath: m_text
-      value: Move the block towards the goal
+      value: Move the UFO towards the goal
       objectReference: {fileID: 0}
     - target: {fileID: 1539177088254532059, guid: b49ca7783b13c854d9b5f7a000f98e00, type: 3}
       propertyPath: m_isRightToLeft
@@ -995,9 +1032,9 @@ PrefabInstance:
       value: 'Your awnser was correct.
 
 
-        Since both vectors have the same
-        magnitude and are mirrored along the x-axis, the resultant force will lie
-        entirely along the x-axis.'
+        If you balance out the vecors on
+        the x-axis, the resultant velocity will face in the direction of the remaining
+        vectors.'
       objectReference: {fileID: 0}
     - target: {fileID: 4974457708180810896, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_Tiles.Array.size
@@ -2151,7 +2188,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2035506439363430703, guid: 05d25b5b84ba3a548967f1f0857f6659, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.99
+      value: -1.506
       objectReference: {fileID: 0}
     - target: {fileID: 2035506439363430703, guid: 05d25b5b84ba3a548967f1f0857f6659, type: 3}
       propertyPath: m_LocalPosition.y

@@ -216,7 +216,11 @@ PrefabInstance:
       value: 'Help Captain Jupiter by telling him the minimum force he needs to use
         to stop the boulder.
 
-        (g = 9.81)'
+
+        g = 20N/kg
+
+
+        m(boulder) = 326kg'
       objectReference: {fileID: 0}
     - target: {fileID: 3036889718164493124, guid: b49ca7783b13c854d9b5f7a000f98e00, type: 3}
       propertyPath: m_Name
@@ -467,20 +471,28 @@ PrefabInstance:
       value: Brick
       objectReference: {fileID: 0}
     - target: {fileID: 3639825427254507161, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 21299bfcf1708a74d80d8f1380beb457, type: 3}
+    - target: {fileID: 3639825427254507161, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
       propertyPath: m_Color.b
-      value: 0.34393916
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3639825427254507161, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
       propertyPath: m_Color.g
-      value: 0.41857752
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3639825427254507161, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
       propertyPath: m_Color.r
-      value: 0.5566038
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4567608300608034867, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
       propertyPath: m_Mass
-      value: 652
+      value: 326
+      objectReference: {fileID: 0}
+    - target: {fileID: 4567608300608034867, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
+      propertyPath: m_GravityScale
+      value: 2.039432
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -550,8 +562,9 @@ MonoBehaviour:
 
 
 
-    (tipp:
-    force = mass * acceleration)'
+    (hint:
+    The force Captain Jupiter is applying has to be equal the the one gravity is
+    applying to the boulder)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1189,9 +1202,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4940137382540625578, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_text
+      value: 'That awnser was correct.
+
+
+        To solve questions like this you
+        can simply calculate the force that gravity is applying on the boulder.'
+      objectReference: {fileID: 0}
     - target: {fileID: 7726849071112176996, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_Name
       value: Base
+      objectReference: {fileID: 0}
+    - target: {fileID: 8466555577478057921, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.1981132
+      objectReference: {fileID: 0}
+    - target: {fileID: 8466555577478057921, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.14297792
+      objectReference: {fileID: 0}
+    - target: {fileID: 8466555577478057921, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.15520027
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

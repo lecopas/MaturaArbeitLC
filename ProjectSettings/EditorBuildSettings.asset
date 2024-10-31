@@ -68,4 +68,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SpeedVector1.unity
     guid: ab1bdb1c8e869744f8d872a28bf0d510
+  - enabled: 1
+    path: Assets/Scenes/SpeedVector5.unity
+    guid: b808b7549f0bc8f44a84e44f013c7feb
+  - enabled: 1
+    path: Assets/Scenes/N1P2.unity
+    guid: ead0bce43319bb3408b63b0b684a8ab1
+  - enabled: 1
+    path: Assets/Scenes/Mass-Weight.unity
+    guid: 692c98510ea81c94593fe063ff70d4fd
+  - enabled: 1
+    path: Assets/Scenes/Mass-Weight2.unity
+    guid: 8f1f674df524e0b4ea4ae1a81333a428
   m_configObjects: {}

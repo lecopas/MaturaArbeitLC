@@ -1169,15 +1169,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8466555577478057921, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_BackGroundColor.b
-      value: 0.8490566
+      value: 0.7169812
       objectReference: {fileID: 0}
     - target: {fileID: 8466555577478057921, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_BackGroundColor.g
-      value: 0.66119105
+      value: 0.6008
       objectReference: {fileID: 0}
     - target: {fileID: 8466555577478057921, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_BackGroundColor.r
-      value: 0.45256317
+      value: 0.47009614
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -1922,7 +1922,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -3
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.32345325, g: 0.5754717, b: 0.28502136, a: 1}
+  m_Color: {r: 0.3764706, g: 0.5372549, b: 0.3529412, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

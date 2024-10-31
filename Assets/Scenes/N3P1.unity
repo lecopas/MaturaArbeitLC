@@ -479,7 +479,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeTotal: 1.5
   result: victory
-  expectedResult: 55
+  expectedResult: 50
   playerResult: 
   correctObject: {fileID: 0}
   selectedObject: {fileID: 0}

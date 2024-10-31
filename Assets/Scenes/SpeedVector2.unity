@@ -179,6 +179,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4822938310034130197, guid: 7c0fbd468074b4a4f98797ccacbe088e, type: 3}
+      propertyPath: m_Size.x
+      value: 2.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822938310034130197, guid: 7c0fbd468074b4a4f98797ccacbe088e, type: 3}
+      propertyPath: m_Size.y
+      value: 0.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822938310034130197, guid: 7c0fbd468074b4a4f98797ccacbe088e, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822938310034130197, guid: 7c0fbd468074b4a4f98797ccacbe088e, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7185465419840944786, guid: 7c0fbd468074b4a4f98797ccacbe088e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9f06fbac186708941afa5f66fb9de43a, type: 3}
+    - target: {fileID: 7185465419840944786, guid: 7c0fbd468074b4a4f98797ccacbe088e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7aea8d701bd5cee479db7e6721614d75, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -844,7 +868,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2035506439363430703, guid: 05d25b5b84ba3a548967f1f0857f6659, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.8913131
+      value: 1.54
       objectReference: {fileID: 0}
     - target: {fileID: 2035506439363430703, guid: 05d25b5b84ba3a548967f1f0857f6659, type: 3}
       propertyPath: m_LocalPosition.y
@@ -997,6 +1021,10 @@ PrefabInstance:
     - target: {fileID: 379237476979964575, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_margin.z
       value: 81.656525
+      objectReference: {fileID: 0}
+    - target: {fileID: 1020127224432923272, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_text
+      value: Move the UFO towards the goal
       objectReference: {fileID: 0}
     - target: {fileID: 2712071343987009201, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_LocalPosition.x

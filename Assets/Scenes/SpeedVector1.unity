@@ -230,7 +230,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1020127224432923272, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_text
-      value: Make the block reach the flag
+      value: Make the boulder reach the flag
       objectReference: {fileID: 0}
     - target: {fileID: 2712071343987009201, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_LocalPosition.x
