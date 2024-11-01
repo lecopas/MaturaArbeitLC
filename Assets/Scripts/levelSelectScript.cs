@@ -16,7 +16,10 @@ public class levelSelectScript : MonoBehaviour
 
     public int currentLevelNumber;
 
-    
+    public float cameraPosition = 0;
+
+
+
 
     public void LoadLevel(string levelName)
     {

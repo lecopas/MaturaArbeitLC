@@ -9,9 +9,11 @@ public class ButtonScript : MonoBehaviour
     public bool completed = false;
     public int buttonNumber;
     public string levelName;
+    GameObject cam;
     levelSelectScript selector;
 
     void Start(){
+        cam = GameObject.FindGameObjectWithTag("MainCamera");
         Scene scene = SceneManager.GetActiveScene();
         selector = FindObjectOfType<levelSelectScript>();
         if(buttonNumber != 0)
@@ -56,6 +58,8 @@ public class ButtonScript : MonoBehaviour
         } else {
             selector.levelLegit = true;
         }
+
+        selector.cameraPosition = cam.transform.position.y;
         SceneManager.LoadScene(levelName);
         //selector.levelCheck[buttonNumber] = true;
         selector.currentLevelNumber = buttonNumber;
