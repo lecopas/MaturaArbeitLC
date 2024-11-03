@@ -436,7 +436,7 @@ PrefabInstance:
       propertyPath: m_text
       value: "The speed of an object is the total change of its position over time.
         It is commonly reffered to as \"v\" and uses the unit meters per second (or
-        m/s ).\n\nYou can calculate it by dividing the change in position \u2206v
+        m/s ).\n\nYou can calculate it by dividing the change in position \u2206x
         by the total time that has passed \u2206t. For example: if a car moved 5
         meters in the 2 seconds, it has a speed of 2.5m/s. You can also calculate
         the distance travelled by multiplying the speed with the time."

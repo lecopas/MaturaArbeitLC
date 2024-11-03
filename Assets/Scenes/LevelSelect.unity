@@ -2054,7 +2054,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 679444708}
-  scrollSpeed: 5
+  scrollSpeed: 50
+  scrollSpeedArrow: 3.5
   floor: 0
   roof: 17.5
 --- !u!114 &679444714

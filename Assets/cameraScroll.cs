@@ -6,6 +6,7 @@ public class cameraScroll : MonoBehaviour
 {
     public GameObject cam;
     public float scrollSpeed;
+    public float scrollSpeedArrow;
     public float floor;
     public float roof;
     levelSelectScript ls;
@@ -35,14 +36,14 @@ public class cameraScroll : MonoBehaviour
         {
             if(cam.transform.position.y < roof)
             {
-                cam.transform.position = new Vector3(0, cam.transform.position.y + scrollSpeed * Time.fixedDeltaTime * 1);
+                cam.transform.position = new Vector3(0, cam.transform.position.y + scrollSpeedArrow * Time.fixedDeltaTime * 1);
             }
             
         } else if (Input.GetKey(KeyCode.DownArrow))
         {
             if (cam.transform.position.y > floor)
             {
-                cam.transform.position = new Vector3(0, cam.transform.position.y + scrollSpeed * Time.fixedDeltaTime * -1);
+                cam.transform.position = new Vector3(0, cam.transform.position.y + scrollSpeedArrow * Time.fixedDeltaTime * -1);
             }
         }
     }
