@@ -187,7 +187,7 @@ PrefabInstance:
       value: 'That awnser was correct.
 
 
-        An object being in rest means, that
+        An object being in rest means that
         the total forces acting on it are zero.'
       objectReference: {fileID: 0}
     - target: {fileID: 7726849071112176996, guid: cc5d90810349375479595a19e2ae9047, type: 3}

@@ -554,12 +554,10 @@ PrefabInstance:
 
 
         Even though they have different
-        masses, they will still stop accelerating once they collide, because the
-        total force applied to each of them is equal.
-
-
-        (more stuff about
-        inelastic collisions)'
+        masses, both objects will stop accelerating upon collision because the total
+        force applied to each of them is equal. The situation would be more complicated
+        if the collision were not completely inelastic, as they would bounce off
+        each other upon impact.'
       objectReference: {fileID: 0}
     - target: {fileID: 7726849071112176996, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_Name

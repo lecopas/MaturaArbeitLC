@@ -180,6 +180,19 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -0.30004883
       objectReference: {fileID: 0}
+    - target: {fileID: 4940137382540625578, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_text
+      value: 'That awnser was correct.
+
+
+        According to Newton''s First Law,
+        if we want an object to continue moving at a constant velocity, the resultant
+        (or net) force acting on it must be zero.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494787896326693540, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: startBox
+      value: 
+      objectReference: {fileID: 949234617}
     - target: {fileID: 7726849071112176996, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_Name
       value: Base
@@ -213,11 +226,19 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5758165546813883906, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       insertIndex: -1
       addedObject: {fileID: 405232957}
+    - targetCorrespondingSourceObject: {fileID: 5950460935090422553, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      insertIndex: 0
+      addedObject: {fileID: 949234616}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7569331381057800269, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       insertIndex: -1
       addedObject: {fileID: 300232453}
   m_SourcePrefab: {fileID: 100100000, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+--- !u!224 &59875849 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5950460935090422553, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+  m_PrefabInstance: {fileID: 59875848}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &277099227 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 909359704818110176, guid: a10630481f41aab43ab0d1a0920a866a, type: 3}
@@ -595,6 +616,157 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &949234615
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 59875849}
+    m_Modifications:
+    - target: {fileID: 1842752221174252789, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_text
+      value: Newton's first law of motion
+      objectReference: {fileID: 0}
+    - target: {fileID: 2144888872306192737, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_Name
+      value: LevelStartBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 2144888872306192737, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7694909284249858750, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -300
+      objectReference: {fileID: 0}
+    - target: {fileID: 7694909284249858750, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -200
+      objectReference: {fileID: 0}
+    - target: {fileID: 7694909284249858750, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7694909284249858750, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7839956988159441097, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_text
+      value: 'Newton''s laws of motion consist of three fundamental principles that
+        describe how objects move in response to forces acting upon them. These laws
+        form the foundation of classical mechanics.
+
+
+        Newtons first law states
+        that an object will stay at rest or continue moving with a constant velocity,
+        provided that the resultant force acting on it is zero. Meaning that an object
+        will only accelerate or deccelerate if the resultant force acting on it is
+        greater than zero.
+
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7839956988159441097, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_fontSize
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.00036621094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.00012207031
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+--- !u!224 &949234616 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+  m_PrefabInstance: {fileID: 949234615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &949234617 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2144888872306192737, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+  m_PrefabInstance: {fileID: 949234615}
+  m_PrefabAsset: {fileID: 0}
 --- !u!50 &1194755619 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 513986607000862207, guid: 7c0fbd468074b4a4f98797ccacbe088e, type: 3}
