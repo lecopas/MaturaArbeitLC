@@ -1303,7 +1303,7 @@ PrefabInstance:
     - target: {fileID: 1020127224432923272, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_text
       value: "Captain Saturn determined that both of these\nboulders weigh the same.
-        Which one hase the larger \nmass, assuming gravitational acceleration (g)
+        Which one has the larger \nmass, assuming gravitational acceleration (g)
         on \nEarth is 10N/kg  and on the Moon is 1N/kg ?"
       objectReference: {fileID: 0}
     - target: {fileID: 2712071343987009201, guid: cc5d90810349375479595a19e2ae9047, type: 3}

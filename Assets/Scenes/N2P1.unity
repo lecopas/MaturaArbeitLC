@@ -649,13 +649,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1328002346}
     m_Modifications:
+    - target: {fileID: 1842752221174252789, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_text
+      value: Newtons Second Law
+      objectReference: {fileID: 0}
     - target: {fileID: 2144888872306192737, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
       propertyPath: m_Name
       value: LevelStartBox
       objectReference: {fileID: 0}
     - target: {fileID: 2144888872306192737, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6206041273977286649, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
       propertyPath: m_IsActive
@@ -684,7 +688,7 @@ PrefabInstance:
         its mass.
 
 
-        It is usually expressed expressed wirth the formula:
+        It is usually expressed with the formula:
 
         F
         = ma (force equals mass * acceleration)
@@ -696,7 +700,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7839956988159441097, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
       propertyPath: m_fontSize
-      value: 22.1
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
       propertyPath: m_Pivot.x

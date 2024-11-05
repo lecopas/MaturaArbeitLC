@@ -80,4 +80,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mass-Weight2.unity
     guid: 8f1f674df524e0b4ea4ae1a81333a428
+  - enabled: 1
+    path: Assets/Scenes/Hebel2.unity
+    guid: 5e4ca8711da73bc4c9518ad2e1e74ab0
   m_configObjects: {}
