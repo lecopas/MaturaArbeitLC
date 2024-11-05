@@ -203,7 +203,7 @@ PrefabInstance:
 
 
         (hint:
-        remember newtons first law)'
+        the baby is at rest)'
       objectReference: {fileID: 0}
     - target: {fileID: 8466555577478057921, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_BackGroundColor.b

@@ -265,6 +265,15 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -0.30004883
       objectReference: {fileID: 0}
+    - target: {fileID: 4940137382540625578, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_text
+      value: 'That awnser was correct.
+
+
+        Both rockets are being pulled down
+        by the same g, which is also an acceleration. So they need the same acceleration
+        to stay still despite being different masses.'
+      objectReference: {fileID: 0}
     - target: {fileID: 6289760431899894008, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_Color.b
       value: 0
@@ -283,14 +292,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7843440837663630035, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_text
-      value: 'Sadly that was incorrect. Press RESTART to try again.
-
-
-
-
-
-        (hint:
-        look at Newtons second law again)'
+      value: "Sadly that was incorrect. Press RESTART to try again.\n\n\n\n\n(hint:
+        g can be written in N/kg but also m/s\xB2)"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
