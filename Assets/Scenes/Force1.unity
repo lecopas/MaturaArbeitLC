@@ -610,7 +610,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4940137382540625578, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_text
-      value: 'That awnser was correct.
+      value: 'That answer was correct.
 
 
         The from the bat is no longer being

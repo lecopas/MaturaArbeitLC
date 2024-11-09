@@ -988,7 +988,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3859146315235423342, guid: 79ff8a632a4b5c64996dd0a7f3412c34, type: 3}
       propertyPath: m_text
-      value: 'Your awnser was correct.
+      value: 'That answer was correct.
 
 
         Mr. Green has a speed of 2.4 m/s,

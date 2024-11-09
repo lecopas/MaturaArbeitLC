@@ -199,7 +199,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "That awnser was correct.\n\nSince both engines exert the same force and
+  m_text: "That answer was correct.\n\nSince both engines exert the same force and
     are placed at a 90\xB0 angle to each other, the resulting force is at a 45\xB0
     angle and is facing the flag."
   m_isRightToLeft: 0

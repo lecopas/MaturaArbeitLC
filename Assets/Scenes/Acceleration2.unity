@@ -873,7 +873,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4940137382540625578, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_text
-      value: "That awnser was correct.\n\nIf you are moving 56m/s and deccelarate
+      value: "That answer was correct.\n\nIf you are moving 56m/s and deccelarate
         at 8m/s\xB2 for 7 seconds, you come to a complete stop."
       objectReference: {fileID: 0}
     - target: {fileID: 4974457708180810896, guid: cc5d90810349375479595a19e2ae9047, type: 3}
