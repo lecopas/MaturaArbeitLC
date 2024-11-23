@@ -7,6 +7,9 @@ public class flagScript : MonoBehaviour
 {
     Rigidbody2D rb;
     mainScript ms;
+    public float req = 1;
+    float cur = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +19,11 @@ public class flagScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other){
         if(other.collider.tag == "Modifiable"){
-            ms.Victory();
+            cur += 1;
+            if(cur >= req)
+            {
+                ms.Victory();
+            }
         }
     }
 }

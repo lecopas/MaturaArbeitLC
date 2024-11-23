@@ -2767,7 +2767,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   completed: 0
-  buttonNumber: 15
+  buttonNumber: 14
   levelName: N2P1
 --- !u!1 &816246082
 GameObject:
@@ -4197,7 +4197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   completed: 0
-  buttonNumber: 17
+  buttonNumber: 16
   levelName: N2P3
 --- !u!114 &1232013265 stripped
 MonoBehaviour:
@@ -4876,7 +4876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   completed: 0
-  buttonNumber: 13
+  buttonNumber: 12
   levelName: N1P2
 --- !u!1 &1450603462
 GameObject:
@@ -5225,7 +5225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   completed: 0
-  buttonNumber: 14
+  buttonNumber: 13
   levelName: N1P1
 --- !u!1 &1654922995
 GameObject:
@@ -6376,7 +6376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   completed: 0
-  buttonNumber: 16
+  buttonNumber: 15
   levelName: N2P2
 --- !u!1001 &1900339702
 PrefabInstance:
@@ -6948,7 +6948,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   completed: 0
-  buttonNumber: 12
+  buttonNumber: 17
   levelName: Force1
 --- !u!1 &2080193388
 GameObject:
