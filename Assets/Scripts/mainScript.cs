@@ -45,7 +45,7 @@ public class mainScript : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown("escape"))
+        if (Input.GetKeyDown("escape") || Input.GetKeyDown("p"))
         {
             if(Time.timeScale == 1)
             {
@@ -96,6 +96,12 @@ public class mainScript : MonoBehaviour
         SceneManager.LoadScene("LevelSelect");
     }
 
+    public void EndScreen()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("EndScreen");
+    }
+
     public void ToggleStartbox(bool inp)
     {
         if (startBox != null)
@@ -134,6 +140,7 @@ public class mainScript : MonoBehaviour
     public void ShowRotation()
     {
         //tmp_if.text = mainRotation.ToString();
+        tmp_if.ActivateInputField();
         float tempRot = mainRotation;
         baseText.text = mainRotation.ToString() + "°";
     }

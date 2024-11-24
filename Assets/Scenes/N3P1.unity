@@ -373,8 +373,9 @@ PrefabInstance:
       value: 'That answer was correct.
 
 
-        The reaction of Zlorn pulling on
-        his head has to be equal to the action.'
+        Since Zlorn is pulling on his head
+        with a force of 50 N, the reaction is that his head pulls on his hand with
+        an equal force of 50 N downward.'
       objectReference: {fileID: 0}
     - target: {fileID: 5593778555363232545, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -397,7 +398,7 @@ PrefabInstance:
 
 
         (hint:
-        look at Newtons third law again)'
+        remember Newton''s third law)'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

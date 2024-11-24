@@ -613,9 +613,9 @@ PrefabInstance:
       value: 'That answer was correct.
 
 
-        The from the bat is no longer being
-        applied to the ball after they loose contact. So the only remaining force
-        on the ball is gravity.'
+        The force from the bat is no longer
+        being applied to the ball after they lose contact. So the only remaining
+        force on the ball is gravity.'
       objectReference: {fileID: 0}
     - target: {fileID: 4974457708180810896, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_Tiles.Array.size

@@ -123,6 +123,166 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &104407317
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 784043154}
+    m_Modifications:
+    - target: {fileID: 1842752221174252789, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_text
+      value: Vectors
+      objectReference: {fileID: 0}
+    - target: {fileID: 2144888872306192737, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_Name
+      value: LevelStartBox (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2144888872306192737, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5127743209161641397, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_text
+      value: NEXT
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842388998191827831, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842388998191827831, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842388998191827831, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 817149450}
+    - target: {fileID: 6842388998191827831, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842388998191827831, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842388998191827831, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842388998191827831, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842388998191827831, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7839956988159441097, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_text
+      value: "In the following exercises, try moving velocity vectors using your
+        cursor and holding left-click. \n\nYou can change the rotation of a vector
+        by using the scroll wheel of you mouse while you are dragging it. Alternatively,
+        you can right-click on a vector and type in the rotation manualy.\n\nOnce
+        you've attached the the base of the velocity vector <sprite name=\"Velocity\">
+        to the boulder, you can press the start button <sprite name=\"Button\"> to
+        start the simulation"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7839956988159441097, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_fontSize
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.00036621094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.00012207031
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+--- !u!224 &104407318 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+  m_PrefabInstance: {fileID: 104407317}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &183611130
 GameObject:
   m_ObjectHideFlags: 0
@@ -250,6 +410,135 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c0fbd468074b4a4f98797ccacbe088e, type: 3}
+--- !u!1001 &330737340
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 784043154}
+    m_Modifications:
+    - target: {fileID: 1842752221174252789, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_text
+      value: Vectors
+      objectReference: {fileID: 0}
+    - target: {fileID: 2144888872306192737, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_Name
+      value: LevelStartBox (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2144888872306192737, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7839956988159441097, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_text
+      value: 'In the top right corner, you can see the direction in which gravity
+        is acting from your point of view.
+
+
+        In this level, gravity points
+        into the screen and can be ignored. This inward direction is represented
+        by this symbol.
+
+
+        A downward-pointing arrow      indicates that gravity
+        is pulling an object toward the bottom of the screen.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7839956988159441097, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_fontSize
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.00036621094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.00012207031
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 798902617}
+    - targetCorrespondingSourceObject: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1874463606}
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
 --- !u!1 &366727418 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2144888872306192737, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
@@ -841,6 +1130,91 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5950460935090422553, guid: cc5d90810349375479595a19e2ae9047, type: 3}
   m_PrefabInstance: {fileID: 1388580453}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &798902616
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 798902617}
+  - component: {fileID: 798902619}
+  - component: {fileID: 798902618}
+  m_Layer: 0
+  m_Name: Down 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &798902617
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798902616}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 27.330002, y: 27.330002, z: 27.330002}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 817149451}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -29.5, y: -60}
+  m_SizeDelta: {x: 1, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &798902618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798902616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 92a707794621fa6469446406e5d94967, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &798902619
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798902616}
+  m_CullTransparentMesh: 1
+--- !u!1 &817149450 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2144888872306192737, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+  m_PrefabInstance: {fileID: 330737340}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &817149451 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+  m_PrefabInstance: {fileID: 330737340}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1388580453
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -903,7 +1277,7 @@ PrefabInstance:
 
 
         Since the velocity vector is pointing
-        in the direction of the flag the attached object will move in the same direction.'
+        in the direction of the flag, the attached object will move in the same direction.'
       objectReference: {fileID: 0}
     - target: {fileID: 7494787896326693540, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: startBox
@@ -938,6 +1312,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5950460935090422553, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       insertIndex: -1
       addedObject: {fileID: 366727419}
+    - targetCorrespondingSourceObject: {fileID: 5950460935090422553, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 104407318}
+    - targetCorrespondingSourceObject: {fileID: 5950460935090422553, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 817149451}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7569331381057800269, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       insertIndex: -1
@@ -971,6 +1351,11 @@ MonoBehaviour:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6856405948566685048, guid: cc5d90810349375479595a19e2ae9047, type: 3}
   m_PrefabInstance: {fileID: 1388580453}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1401706130 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2144888872306192737, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+  m_PrefabInstance: {fileID: 104407317}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1542139557
 PrefabInstance:
@@ -1029,6 +1414,81 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5fdd0440ad1f844295f09c9176df3ca, type: 3}
+--- !u!1 &1874463605
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1874463606}
+  - component: {fileID: 1874463608}
+  - component: {fileID: 1874463607}
+  m_Layer: 0
+  m_Name: IntoScreen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1874463606
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874463605}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 32.2, y: 32.2, z: 32.2}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 817149451}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 223.8, y: -7}
+  m_SizeDelta: {x: 0.8125, y: 0.8125}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1874463607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874463605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 2234ca2941498f04b8ae01f1be8c5db1, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1874463608
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874463605}
+  m_CullTransparentMesh: 1
 --- !u!1001 &2086520536
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1212,21 +1672,53 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5127743209161641397, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_text
+      value: NEXT
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842388998191827831, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842388998191827831, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842388998191827831, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1401706130}
+    - target: {fileID: 6842388998191827831, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842388998191827831, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842388998191827831, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842388998191827831, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842388998191827831, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7839956988159441097, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
       propertyPath: m_text
-      value: "A vector is a quantity that possesses both a magnitude and a direction.
-        In physics, vectors describe values like velocity <sprite name=\"Velocity\">,
-        acceleration <sprite name=\"Acceleration\"> and force <sprite name=\"Engine\">.
+      value: 'A vector is a quantity that possesses both a magnitude and a direction.
+        In physics, vectors describe values like velocity <sprite name="Velocity">,
+        acceleration <sprite name="Acceleration"> and force <sprite name="Engine">.
         Geometrically, vectors are often represented by arrows, where the direction
         of the arrow indicates the direction of the vector, and the length (or magnitude)
         of the arrow corresponds to its strength or value. For instance, in the case
         of a velocity vector, the direction of the arrow shows which way the object
-        is moving, while the magnitude tells us how fast it's moving, usually in
-        meters per second (m/s). \n\nIn the following exercises, try moving velocity
-        vectors using your cursor and left click. You can also right-click on them
-        to change their rotation. Once you've attached the velocity vector <sprite
-        name=\"Velocity\"> to the boulder, you can press the start button <sprite
-        name=\"Button\"> to start the simulation"
+        is moving, while the magnitude tells us how fast it''s moving, usually in
+        meters per second (m/s). '
       objectReference: {fileID: 0}
     - target: {fileID: 7839956988159441097, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
       propertyPath: m_fontSize

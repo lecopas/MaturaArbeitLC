@@ -11,7 +11,7 @@ public class LevelSelectMain : MonoBehaviour
     {
         if (Input.GetKey("left shift"))
         {
-            if (Input.GetKeyDown("escape"))
+            if (Input.GetKeyDown("p"))
             {
                 Button[] btn = FindObjectsOfType(typeof(Button)) as Button[];
 

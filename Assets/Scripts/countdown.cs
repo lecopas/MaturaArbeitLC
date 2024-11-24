@@ -24,7 +24,7 @@ public class countdown : MonoBehaviour
         ms = FindObjectOfType<mainScript>();
         timeLeft = timeTotal;
         if(countText != null){
-            countText.DisplayTime(timeLeft);
+            countText.DisplayTime(timeLeft,".0");
         }
         
     }
@@ -35,9 +35,19 @@ public class countdown : MonoBehaviour
 
         if(ms.started == true){
             timeLeft -= Time.deltaTime;
-            float displayedTime = Mathf.Floor(timeLeft * 100f) * 0.01f;  // Floor to 2 decimal places
+            float displayedTime = Mathf.Round(timeLeft * 10f) * .1f;  // Floor to 2 decimal places
             if(countText != null){
-                countText.DisplayTime(displayedTime);
+                if(displayedTime >= 0)
+                {
+                    if(displayedTime % 1 == 0)
+                    {
+                        countText.DisplayTime(displayedTime,".0");
+                    } else
+                    {
+                        countText.DisplayTime(displayedTime,"");
+                    }
+                    
+                }
             }
             
 

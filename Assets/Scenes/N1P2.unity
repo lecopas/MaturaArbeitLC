@@ -962,7 +962,7 @@ PrefabInstance:
 
 
         (hint:
-        remember newtons first law)'
+        Sarah is moving at a constant velocity)'
       objectReference: {fileID: 0}
     - target: {fileID: 8466555577478057921, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_BackGroundColor.b
@@ -1416,11 +1416,11 @@ PrefabInstance:
         form the foundation of classical mechanics.
 
 
-        Newtons first law states
-        that an object will stay at rest or continue moving with a constant velocity,
-        provided that the resultant force acting on it is zero. Meaning that an object
-        will only accelerate or deccelerate if the resultant force acting on it is
-        greater than zero.
+        Newton''s first law
+        states that an object will stay at rest or continue moving with a constant
+        velocity, provided that the resultant force acting on it is zero. Meaning
+        that an object will only accelerate or deccelerate if the resultant force
+        acting on it is greater than zero.
 
 
 '

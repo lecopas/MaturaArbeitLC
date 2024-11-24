@@ -356,7 +356,7 @@ PrefabInstance:
 
         Assuming that the distance between
         the lines is 1 meter, the baby would create a torque of 8 N * m clockwise.
-        Meaning the engine has to be 4 m away from torque in order to balance the
+        Meaning the engine has to be 4 m away from fulcrum in order to balance the
         seesaw.'
       objectReference: {fileID: 0}
     - target: {fileID: 6289760431899894008, guid: cc5d90810349375479595a19e2ae9047, type: 3}
@@ -1164,7 +1164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1539177088254532059, guid: b49ca7783b13c854d9b5f7a000f98e00, type: 3}
       propertyPath: m_text
-      value: "Stop the Baby from falling by balancing the seesaw.\ng = 10 m/s\xB2\nm
+      value: "Stop the baby from falling by balancing the seesaw.\ng = 10 m/s\xB2\nm
         baby = 0.4 kg"
       objectReference: {fileID: 0}
     - target: {fileID: 3036889718164493124, guid: b49ca7783b13c854d9b5f7a000f98e00, type: 3}
@@ -2133,7 +2133,7 @@ PrefabInstance:
     - target: {fileID: 7839956988159441097, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
       propertyPath: m_text
       value: "Archimedes once said \"Give me a lever long enough and a fulcrum on
-        which to place it, and I shall move the world. \u201D\n\nA Lever is a Beam
+        which to place it, and I shall move the world. \u201D\n\nA lever is a beam
         that rotates around a hinge or pivot, called a fulcrum. Under ideal circumstances,
         the work put into the lever is the same as the work output, and the force
         multiplication depends on the distances from the fulcrum.\n\nThis is called
@@ -3691,7 +3691,7 @@ PrefabInstance:
 
 
         T
-        = F * a (distance to fulcrum)
+        = F * x (distance to fulcrum)
 
 
         Torque will apply angular momentum

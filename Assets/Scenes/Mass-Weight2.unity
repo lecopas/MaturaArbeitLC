@@ -1253,8 +1253,8 @@ PrefabInstance:
     - target: {fileID: 1020127224432923272, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_text
       value: "Captain Saturn determined that both of these\nboulders weigh the same.
-        Which one has the larger \nmass, assuming gravitational acceleration (g)
-        on \nEarth is 10N/kg  and on the Moon is 1N/kg ?"
+        Which one has the larger \nmass, assuming the gravitational acceleration
+        (g) on \nEarth is 10N/kg  and on the Moon is 1N/kg ?"
       objectReference: {fileID: 0}
     - target: {fileID: 2712071343987009201, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1302,8 +1302,8 @@ PrefabInstance:
 
 
         Since the weight of an object can
-        be calculated by multiplying its mass with g, the boulder on the moon would
-        need a mass that is 10 times larger than the one on earth to seemingly weigh
+        be calculated by multiplying its mass with g, the boulder on the Moon would
+        need a mass that is 10 times larger than the one on Earth to seemingly weigh
         the same.'
       objectReference: {fileID: 0}
     - target: {fileID: 4974457708180810896, guid: cc5d90810349375479595a19e2ae9047, type: 3}

@@ -139,6 +139,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelStartBox
       objectReference: {fileID: 0}
+    - target: {fileID: 2144888872306192737, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7839956988159441097, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
       propertyPath: m_text
       value: 'One common mistake that people often make is confusing mass and weight.
@@ -153,8 +157,8 @@ PrefabInstance:
 
 
         The weight
-        of an object is different depending on the local gravitation acceleration,
-        while its mass remains a constant.'
+        of an object is different depending on the local gravitational acceleration
+        (g), while its mass remains a constant.'
       objectReference: {fileID: 0}
     - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
       propertyPath: m_Pivot.x
@@ -483,9 +487,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1020127224432923272, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_text
-      value: "Larg has a mass of 36kg on Earth. What would his \nmass be on the Moon,
-        assuming gravitational \nacceleration (g) on Earth is 10m/s\xB2  and on the
-        Moon \nis 1 m/s\xB2 ?"
+      value: "Larg has a mass of 36 kg on Earth. What would his \nmass be on the
+        Moon, assuming the gravitational \nacceleration (g) on Earth is 10 m/s\xB2
+        \nand on the Moon is 1 m/s\xB2?"
       objectReference: {fileID: 0}
     - target: {fileID: 2712071343987009201, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_LocalPosition.x

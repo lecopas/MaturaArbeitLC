@@ -1134,9 +1134,8 @@ PrefabInstance:
       value: 'That answer was correct.
 
 
-        If you balance out the vecors on
-        the x-axis, the resultant velocity will face in the direction of the remaining
-        vectors.'
+        If the vectors on the x-axis cancel
+        each other out, the resultant velocity will be along the y-axis.'
       objectReference: {fileID: 0}
     - target: {fileID: 4974457708180810896, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_Tiles.Array.size
@@ -2373,7 +2372,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 82122913615395959}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c49ae86450c7a04fad920f20073a491, type: 3}
   m_Name: 

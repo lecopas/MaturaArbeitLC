@@ -319,11 +319,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1667495575920326555, guid: acf75a3103068ec4a91d31e38d3faeb7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.7553387
+      value: 4.98
       objectReference: {fileID: 0}
     - target: {fileID: 1667495575920326555, guid: acf75a3103068ec4a91d31e38d3faeb7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.898247
+      value: 8.16
       objectReference: {fileID: 0}
     - target: {fileID: 1667495575920326555, guid: acf75a3103068ec4a91d31e38d3faeb7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1237,6 +1237,18 @@ PrefabInstance:
         if the collision were not completely inelastic, as they would bounce off
         each other upon impact.'
       objectReference: {fileID: 0}
+    - target: {fileID: 6289760431899894008, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6289760431899894008, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6289760431899894008, guid: cc5d90810349375479595a19e2ae9047, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7726849071112176996, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_Name
       value: Base
@@ -1546,7 +1558,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1539177088254532059, guid: b49ca7783b13c854d9b5f7a000f98e00, type: 3}
       propertyPath: m_text
-      value: Stop them from falling
+      value: "Stop them from falling.\n\nThis collision is completely inelastic,
+        \nmeaning that both aliens will stick \ntogether after the impact.\n\nThe
+        larger guy's mass is 2 kg,\n while the smaller guy's mass is 1 kg."
       objectReference: {fileID: 0}
     - target: {fileID: 1908603728676323255, guid: b49ca7783b13c854d9b5f7a000f98e00, type: 3}
       propertyPath: m_MatchWidthOrHeight
@@ -1658,11 +1672,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1667495575920326555, guid: acf75a3103068ec4a91d31e38d3faeb7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.76
+      value: 6.77
       objectReference: {fileID: 0}
     - target: {fileID: 1667495575920326555, guid: acf75a3103068ec4a91d31e38d3faeb7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.34
+      value: 8.82
       objectReference: {fileID: 0}
     - target: {fileID: 1667495575920326555, guid: acf75a3103068ec4a91d31e38d3faeb7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2078,7 +2092,7 @@ MonoBehaviour:
 
 
     (hint:
-    the resulting force has to be zero)'
+    the resultant force has to be zero)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2205,11 +2219,11 @@ PrefabInstance:
       objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 1667495575920326555, guid: acf75a3103068ec4a91d31e38d3faeb7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.6216574
+      value: 5.35
       objectReference: {fileID: 0}
     - target: {fileID: 1667495575920326555, guid: acf75a3103068ec4a91d31e38d3faeb7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.543422
+      value: 9.87
       objectReference: {fileID: 0}
     - target: {fileID: 1667495575920326555, guid: acf75a3103068ec4a91d31e38d3faeb7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2466,6 +2480,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 897f81c722f107f4fab8c86ede97bdde, type: 3}
+    - target: {fileID: 4567608300608034867, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4567608300608034867, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
       propertyPath: m_Material
       value: 

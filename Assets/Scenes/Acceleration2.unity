@@ -564,7 +564,7 @@ PrefabInstance:
         time. It is commonly reffered to as \"a\" and uses the unit meters per second
         squared (or m/s\xB2 ).\n\nYou can calculate it by dividing the change in
         speed \u2206v by the total time that has passed \u2206t. For example: if
-        a car went form going 5 m/s to 15 m/s in two second, he is accelerating at
+        a car went form going 5 m/s to 15 m/s in two second, it is accelerating at
         a rate of 5m/s\xB2."
       objectReference: {fileID: 0}
     - target: {fileID: 7988099298171019632, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}

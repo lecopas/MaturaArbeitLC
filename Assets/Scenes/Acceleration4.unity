@@ -931,10 +931,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1020127224432923272, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_text
-      value: The Yellow Pond rocket has re-entered Earths atmosphere but has run
-        out of fuel. Its total velocity is zero at the moment, but earths gravity
-        is acting on it at the moment. Make sure that it stays at rest until somethig
-        comes to the rescue!
+      value: The Purple Pacer has re-entered Earths atmosphere but has run out of
+        fuel. Its total velocity is zero at the moment, but Earths gravity is acting
+        on it. Make sure that it stays at rest until something comes to the rescue!
       objectReference: {fileID: 0}
     - target: {fileID: 2712071343987009201, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1098,7 +1097,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2144888872306192737, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7694909284249858750, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
       propertyPath: m_SizeDelta.x

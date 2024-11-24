@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class levelSelectScript : MonoBehaviour
 {
+    public GameObject startBox;
 
     public bool[] levelCheck = {false, false, false, false, false};
 
@@ -18,10 +19,19 @@ public class levelSelectScript : MonoBehaviour
 
     public float cameraPosition = 0;
 
+    public float firstTimeagain = 0;
 
 
 
-    public void LoadLevel(string levelName)
+    private void Start()
+    {
+        if(firstTimeagain == 0)
+        {
+            startBox.SetActive(true);
+            firstTimeagain = firstTimeagain + 1;
+        }
+    }
+        public void LoadLevel(string levelName)
     {
         SceneManager.LoadScene(levelName);
     }

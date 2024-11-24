@@ -381,6 +381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f113f5cb72c49d4e9cc9c239e529c64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  req: 1
 --- !u!4 &1045039824 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4646285124032206339, guid: 7c0fbd468074b4a4f98797ccacbe088e, type: 3}
@@ -547,6 +548,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f113f5cb72c49d4e9cc9c239e529c64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  req: 1
 --- !u!4 &1182834965 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 690359130534412648, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
@@ -634,8 +636,8 @@ PrefabInstance:
       value: 'That answer was correct.
 
 
-        You easily solve this problem by
-        first calculating how long the baby needs to reach the ground and dividing
+        You can easily solve this problem
+        by first calculating how long the baby needs to reach the ground and dividing
         12m by that time.'
       objectReference: {fileID: 0}
     - target: {fileID: 5593778555363232545, guid: cc5d90810349375479595a19e2ae9047, type: 3}
@@ -1217,6 +1219,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1265877583}
     m_Modifications:
+    - target: {fileID: 1842752221174252789, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
+      propertyPath: m_text
+      value: Acceleration
+      objectReference: {fileID: 0}
     - target: {fileID: 2144888872306192737, guid: 907bd95e3254cdc41971baded8a1b796, type: 3}
       propertyPath: m_Name
       value: LevelStartBox

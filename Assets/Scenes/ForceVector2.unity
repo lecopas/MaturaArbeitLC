@@ -218,7 +218,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1020127224432923272, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_text
-      value: Stop the car form hitting the wall
+      value: Stop the car from hitting the wall
       objectReference: {fileID: 0}
     - target: {fileID: 2712071343987009201, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_LocalPosition.x
@@ -266,7 +266,7 @@ PrefabInstance:
 
 
         If two vectors are of equal magnitude
-        and are facing in opposite directions, they will cancel eachother out.'
+        and are facing in opposite directions, they will cancel each other out.'
       objectReference: {fileID: 0}
     - target: {fileID: 7726849071112176996, guid: cc5d90810349375479595a19e2ae9047, type: 3}
       propertyPath: m_Name
@@ -569,6 +569,10 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: ec8ccc6feab415543952d01973431d63, type: 2}
+    - target: {fileID: 6606866981466110963, guid: a7db4bee88d3efc40a26fb0dc221920c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

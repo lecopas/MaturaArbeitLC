@@ -83,4 +83,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Hebel2.unity
     guid: 5e4ca8711da73bc4c9518ad2e1e74ab0
+  - enabled: 1
+    path: Assets/Scenes/SpeedVector6.unity
+    guid: 4e17d5de4f5d7344a8e072b21ad70f04
+  - enabled: 1
+    path: Assets/Scenes/EndScreen.unity
+    guid: 6c012706459519d4196a639ad7a26bae
   m_configObjects: {}
